@@ -1,4 +1,4 @@
-# FINAL DELIVERABLES — BlueMoon (BTL IT4080, Nhóm 23)
+# FINAL DELIVERABLES — BlueMoon (BTL IT4080, Nhóm 24)
 
 Danh sách chỉ có các file **thật sự nằm trong project**. Cột Owner chỉ là **đề xuất** theo vai trò Scrum (PO Thanh Tuấn, SM Châu Tuấn), nhóm có thể đổi. Stakeholder, Wish, RAW và User Story đều là **Simulated stakeholder input** (*yêu cầu giả lập từ bối cảnh bài toán*), nhóm chưa phỏng vấn thực tế.
 

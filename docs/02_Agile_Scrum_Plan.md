@@ -4,7 +4,7 @@
 |---|---|
 | Phiên bản tài liệu | 0.1 (Phase 1 — bản nháp, chờ nhóm xác nhận) |
 | Cập nhật | 2026-10-03 |
-| Nhóm | Nhóm 23 — 6 thành viên |
+| Nhóm | Nhóm 24 — 6 thành viên |
 | Liên quan | [01_Project_Overview.md](01_Project_Overview.md) |
 
 > **Ghi chú.**
