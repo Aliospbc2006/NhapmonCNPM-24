@@ -1,4 +1,4 @@
-# 05. Hướng dẫn thiết lập GitHub Project — BlueMoon (Nhóm 23)
+# 05. Hướng dẫn thiết lập GitHub Project — BlueMoon (Nhóm 24)
 
 **Phase 7.** Đây chỉ là tài liệu **hướng dẫn**. Nhóm chưa tạo GitHub Project, Issue, commit hay push nào. Khi cả nhóm đồng ý thì làm theo các bước bên dưới. Người phụ trách là Scrum Master (Châu Tuấn), theo `docs/02_Agile_Scrum_Plan.md`.
 
@@ -21,7 +21,7 @@
 
 1. Vào repository, mở tab **Projects**, chọn **New project** (hoặc vào trang cá nhân/tổ chức, tab Projects).
 2. Chọn template **Team planning** hoặc **Table** (view nào cũng được; nhóm sẽ thêm view Board ở bước 2).
-3. Đặt tên: `BlueMoon v1.0 — Nhóm 23`.
+3. Đặt tên: `BlueMoon v1.0 — Nhóm 24`.
 4. Mở **Settings** của Project, mục **Manage access**: thêm đủ 6 thành viên, mức *Write* trở lên. PO và SM nên có quyền *Admin*.
 5. Liên kết Project với repository: trong Project, **Settings → Link a repository** (hoặc từ tab Projects của repo, **Link a project**).
 6. Mở view **Board** và đặt cột nhóm theo trường Status (bước 2).

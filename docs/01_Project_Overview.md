@@ -4,8 +4,8 @@
 |---|---|
 | Phiên bản tài liệu | 0.1 (Phase 1 — bản nháp, chờ nhóm xác nhận) |
 | Cập nhật | 2026-10-03 |
-| Nhóm thực hiện | Nhóm 23 — Châu Tuấn, Thanh Tuấn, Thành Nam, Đức Quang, Mạnh Trường, Tiến Thành |
-| Đơn vị thực hiện | Nhóm 23, bài tập lớn môn Nhập môn Công nghệ phần mềm (IT4080) |
+| Nhóm thực hiện | Nhóm 24 — Châu Tuấn, Thanh Tuấn, Thành Nam, Đức Quang, Mạnh Trường, Tiến Thành |
+| Đơn vị thực hiện | Nhóm 24, bài tập lớn môn Nhập môn Công nghệ phần mềm (IT4080) |
 | Nhà tài trợ | Chưa xác định theo phần giới thiệu bài toán (đề bài chỉ nêu Ban quản trị có nhu cầu xây dựng phần mềm). Ví dụ Charter ở Chương 4 nêu Công ty ABC, chỉ để tham khảo. Với BTL: TEAM DECISION |
 | Nguồn chính | `08. Bo Bai Tap.pdf` (phần "Giới thiệu bài toán", trang 6–8, đứng trước Chương 2; Chương 2–3 cho quy trình), `01_ Huong dan lap ke hoach phat hieu yeu cau BTL (Elicitation).pdf` |
 
@@ -86,7 +86,7 @@ Lưu ý:
 | Cơ quan chức năng, tổ dân phố, chính quyền địa phương | Bên yêu cầu thông tin; phối hợp thu các khoản đóng góp | Nhận thông tin hộ và nhân khẩu chính xác khi yêu cầu | Gián tiếp (nhận thông tin từ Ban quản trị) | [Đề bài] |
 | Công ty ABC (nhà tài trợ; ông Lê Văn B, nhân viên kinh doanh — theo ví dụ Charter Bài 4.1, Chương 4) | Nhà tài trợ / bộ phận kinh doanh | Phạm vi, ngân sách, tiến độ | Gián tiếp | [Ví dụ tham khảo] |
 | Nhà cung cấp dịch vụ điện, nước, internet | Nguồn thông báo phí thu hộ | — | **Chỉ liên quan v2.0** | [Đề bài] |
-| Nhóm phát triển (Nhóm 23) | Thực hiện dự án | Giao đúng phạm vi, đúng chất lượng | Xây dựng hệ thống | — |
+| Nhóm phát triển (Nhóm 24) | Thực hiện dự án | Giao đúng phạm vi, đúng chất lượng | Xây dựng hệ thống | — |
 | Giảng viên | Hướng dẫn và đánh giá BTL | Tuân thủ quy trình Elicitation và Agile/Scrum | Gián tiếp | — |
 
 > Mọi "mong muốn" gán cho các stakeholder trong các tài liệu sau là **Simulated stakeholder input**.

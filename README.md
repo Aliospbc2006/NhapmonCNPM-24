@@ -1,6 +1,6 @@
 # BlueMoon — Phần mềm quản lý và thu phí chung cư
 
-Bài tập lớn môn Nhập môn Công nghệ phần mềm (IT4080), **Nhóm 23**: Châu Tuấn (Scrum Master), Thanh Tuấn (Product Owner), Thành Nam, Đức Quang, Mạnh Trường, Tiến Thành (Developer).
+Bài tập lớn môn Nhập môn Công nghệ phần mềm (IT4080), **Nhóm 24**: Châu Tuấn (Scrum Master), Thanh Tuấn (Product Owner), Thành Nam, Đức Quang, Mạnh Trường, Tiến Thành (Developer).
 
 Repository: https://github.com/Aliospbc2006/NhapmonCNPM-24
 
@@ -35,7 +35,7 @@ Quy ước ID: `RAW-001`, `NFR-001`, `EPIC-01`, `FEAT-01-01`, `US-01`, `AC-US01-
 ## Cấu trúc thư mục
 
 ```
-Bluemoon_Nhom23/
+Bluemoon_Nhom24/
 ├── README.md
 ├── docs/
 │   ├── 01_Project_Overview.md
