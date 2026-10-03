@@ -84,13 +84,14 @@ Tổng: 41 story (21 Must, 18 Should, 2 Could), 143 SP; đã xếp 31 story, 106
 
 ## Dùng GitHub Project
 
-Cách dựng Project, thêm trường, tạo Iteration Sprint 1/2/3, tạo Issue từ User Story và chuyển task nằm trong `docs/05_GitHub_Project_Setup.md`. Mỗi User Story là một Issue, task là sub-issue hoặc checklist trong Issue đó.
+GitHub Project: [BlueMoon v1.0 - Nhóm 24](https://github.com/users/Aliospbc2006/projects/2). Nhóm quản lý Scrum trên board 5 cột `Product Backlog → Sprint Backlog → Todo → Review → Done`. Mỗi User Story là một Issue `[US-XX]`, mỗi task là một Issue `[Sn-Txx]` (sub-issue của story khi task gắn đúng một story). Các field, quy ước Issue và cách dùng board hằng ngày nằm trong `docs/05_GitHub_Project_Setup.md`.
 
 ## Trạng thái hiện tại
 
 - Phase 0–7 đã xong (kế hoạch và tài liệu), đang chờ nhóm và giảng viên xem.
 - Nội dung mô tả đã viết bằng tiếng Việt. Tiêu đề, tên cột và thuật ngữ chuẩn vẫn giữ tiếng Anh. Nhóm cũng đã đối chiếu với 2 PDF của giảng viên, kết quả ở `docs/TEACHER_REQUIREMENTS_AUDIT.md`.
 - Văn phong đã được rà lại một lượt, xem `docs/WRITING_STYLE_REVIEW.md`.
-- Chưa có code ứng dụng, chưa tạo GitHub Project hay Issue, chưa commit hay push thư mục này lên repository.
+- Phase 8: đã tạo GitHub Project, 41 Issue User Story và 150 Issue task từ dữ liệu planning. GitHub Assignee còn để trống, chờ GitHub username của thành viên.
+- Chưa có code ứng dụng; các file local của thư mục này chưa được commit hay push lên repository.
 - Chưa có task nào Done. Giờ làm và người nhận task mới chỉ là đề xuất.
 - Các việc còn tồn đọng nằm ở `docs/FINAL_DELIVERABLES.md`, mục 4.
