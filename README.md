@@ -53,13 +53,11 @@ Bluemoon_Nhom24/
 │   └── 06_Product_Backlog_Sprint_Plan.xlsx
 ├── templates/
 │   └── Mẫu Epic - User story.xlsx  mẫu giảng viên, giữ nguyên bản gốc
-├── references/                     tài liệu nguồn (xem ghi chú)
-├── 01_ Huong dan lap ke hoach phat hieu yeu cau BTL (Elicitation).pdf
-└── 08. Bo Bai Tap.pdf
+└── references/                     tài liệu nguồn của giảng viên (2 file PDF)
+    ├── 01_ Huong dan lap ke hoach phat hieu yeu cau BTL (Elicitation).pdf
+    └── 08. Bo Bai Tap.pdf
 ```
-
-Ghi chú: hai file PDF vẫn nằm ở thư mục gốc vì lúc chuyển, Windows báo file đang mở. Đóng trình xem PDF rồi chuyển chúng vào `references/` (lệnh ở `docs/FINAL_DELIVERABLES.md`, mục 4).
-
+
 ## Deliverable chính
 
 Danh sách đầy đủ, owner và trạng thái: `docs/FINAL_DELIVERABLES.md`.
