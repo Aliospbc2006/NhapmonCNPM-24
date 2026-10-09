@@ -88,7 +88,7 @@ Nhóm rà bằng script kiểm tra riêng và đọc lại tài liệu. Script c
 2. Nhóm chưa xác nhận tên thành viên, vai trò, độ dài sprint (SQ-02) và ngày sprint. Giờ làm và người nhận task chỉ là **đề xuất**.
 3. Definition of Done mới là bản nháp. Sprint 1 có một task để chốt DoD.
 4. Chưa có câu trả lời cho OQ-01 … OQ-14, Q1 … Q3 (`docs/01`) và SQ-01 … SQ-04 (`docs/02`).
-5. Các thay đổi sau review (Phase 9) nằm trên nhánh `fix/team-review-feedback`, chưa merge vào `main`. GitHub Assignee còn trống, chờ username của thành viên.
+5. Các thay đổi sau review (Phase 9) nằm trên nhánh `fix/team-review-feedback`, chưa merge vào `main`. GitHub Assignee mới gán 77/150 task, 73 task còn lại chờ username hoặc lời mời vào repository (xem `docs/05_GitHub_Project_Setup.md`).
 
 **Giả định (KNOWN_ASSUMPTIONS):**
 - Tài khoản quản trị đầu tiên được nạp sẵn khi cài đặt; các tài khoản khác do US-41 tạo.
