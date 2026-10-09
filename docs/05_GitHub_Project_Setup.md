@@ -8,8 +8,6 @@
 - Mô tả Project: Bảng quản lý Product Backlog, Sprint Backlog và tiến độ phát triển của dự án BlueMoon Nhóm 24.
 - Stakeholder, Wish, RAW và User Story đều là **Simulated stakeholder input** (*yêu cầu giả lập từ bối cảnh bài toán*).
 
-> Trên tài khoản GitHub còn một Project rỗng tên "@Aliospbc2006's untitled project" (Project #1) do GitHub tự tạo. Nó không thuộc BlueMoon và chưa bị xóa hay sửa.
-
 ## Tóm tắt kế hoạch
 
 | Hạng mục | Số lượng | Ghi chú |
