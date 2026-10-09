@@ -76,8 +76,8 @@ GitHub không cho đặt tên field là "Type" hoặc "Reviewer" (tên dành ri�
 
 ## Assignee và Reviewer
 
-- Workbook ghi người phụ trách bằng tên (Châu Tuấn, Thanh Tuấn, Thành Nam, Đức Quang, Mạnh Trường, Tiến Thành). Nhóm chưa cung cấp GitHub username của các thành viên, nên **GitHub Assignee để trống**; tên người phụ trách nằm trong body Issue (dòng `Assignee:`).
-- Khi có username, gán Assignee theo dòng `Assignee:` trong body Issue. Chưa gán ai để tránh đoán sai.
+- Workbook ghi người phụ trách bằng tên (Châu Tuấn, Thanh Tuấn, Thành Nam, Đức Quang, Mạnh Trường, Tiến Thành). Tên người phụ trách nằm trong body Issue (dòng `Assignee:`). GitHub Assignee đã gán cho cả 150 task theo dòng `Assignee:`: Châu Tuấn (`Aliospbc2006`, 24), Thanh Tuấn (`GreentunaNTT`, 30), Thành Nam (`vothanhnamnn`, 22), Đức Quang (`BlueKevin66-code`, 24), Mạnh Trường (`truonglm16375`, 25), Tiến Thành (`thenggne`, 25).
+- Story (41 Issue) không có người phụ trách riêng trong workbook nên Assignee để trống. Khi đổi người làm task, sửa cả dòng `Assignee:` trong body và Assignee của Issue.
 - Reviewer ghi trong body Issue và field **Task Reviewer**. Người review khác người thực hiện.
 
 ## Dùng board hằng ngày
@@ -102,5 +102,5 @@ Chi tiết quy trình Scrum, Definition of Done và vai trò: `docs/02_Agile_Scr
 | Custom fields | Xong (Item Type, Task Reviewer thay cho Type, Reviewer) |
 | Issue từ 41 User Story, thêm vào Project | Xong |
 | Issue từ 150 task (55 + 46 + 49), thêm vào Project, 117 sub-issue | Xong |
-| GitHub username của thành viên | Chưa có, chờ nhóm cung cấp |
-| Commit, push file local | Chưa làm |
+| Gán GitHub Assignee | Xong: 150/150 task |
+| Thay đổi Phase 9 (review của thành viên) | Nằm trên nhánh `fix/team-review-feedback`, chưa merge vào `main` |
