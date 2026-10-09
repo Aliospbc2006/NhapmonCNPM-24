@@ -23,8 +23,8 @@ Danh sách chỉ có các file **thật sự nằm trong project**. Cột Owner 
 | 16 | `deliverables/05_Epic_UserStory.xlsx` | 7 Epic, 24 Feature, 41 User Story, 123 AC (theo mẫu giảng viên) | PO Thanh Tuấn | 4, 5 | Hoàn thành, chờ nhóm xác nhận |
 | 17 | `deliverables/06_Product_Backlog_Sprint_Plan.xlsx` | Product Backlog, Traceability, Sprint 1/2/3, Workload, Legend | PO Thanh Tuấn và SM Châu Tuấn | 5, 6, 7 | Hoàn thành, chờ nhóm xác nhận |
 | 18 | `templates/Mẫu Epic - User story.xlsx` | Mẫu gốc của giảng viên (không sửa) | Giảng viên | — | Giữ nguyên bản gốc |
-| 19 | `01_ Huong dan lap ke hoach phat hieu yeu cau BTL (Elicitation).pdf` | Tài liệu hướng dẫn BTL (nguồn tham khảo) | Giảng viên | — | Giữ nguyên; **còn ở thư mục gốc**, xem mục 4 |
-| 20 | `08. Bo Bai Tap.pdf` | Bộ bài tập, có đề bài BlueMoon (nguồn tham khảo) | Giảng viên | — | Giữ nguyên; **còn ở thư mục gốc**, xem mục 4 |
+| 19 | `references/01_ Huong dan lap ke hoach phat hieu yeu cau BTL (Elicitation).pdf` | Tài liệu hướng dẫn BTL (nguồn tham khảo) | Giảng viên | — | Giữ nguyên |
+| 20 | `references/08. Bo Bai Tap.pdf` | Bộ bài tập, có đề bài BlueMoon (nguồn tham khảo) | Giảng viên | — | Giữ nguyên |
 
 ## 2. Số liệu tổng hợp
 
@@ -84,11 +84,10 @@ Nhóm rà bằng script kiểm tra riêng và đọc lại tài liệu. Script c
 ## 4. Tồn đọng, giả định, giới hạn
 
 **Việc tồn đọng (OPEN_ISSUES):**
-1. Hai file PDF chưa chuyển vào `references/` vì Windows báo file đang mở ở ứng dụng khác. Đóng trình xem PDF rồi chạy lệnh ở cuối mục này. Không file nào bị sửa hoặc xóa.
-2. Nhóm chưa xác nhận tên thành viên, vai trò, độ dài sprint (SQ-02) và ngày sprint. Giờ làm và người nhận task chỉ là **đề xuất**.
-3. Definition of Done mới là bản nháp. Sprint 1 có một task để chốt DoD.
-4. Chưa có câu trả lời cho OQ-01 … OQ-14, Q1 … Q3 (`docs/01`) và SQ-01 … SQ-04 (`docs/02`).
-5. Các thay đổi sau review (Phase 9) nằm trên nhánh `fix/team-review-feedback`, chưa merge vào `main`. GitHub Assignee đã gán đủ 150/150 task.
+1. Nhóm chưa xác nhận tên thành viên, vai trò, độ dài sprint (SQ-02) và ngày sprint. Giờ làm và người nhận task chỉ là **đề xuất**.
+2. Definition of Done mới là bản nháp. Sprint 1 có một task để chốt DoD.
+3. Chưa có câu trả lời cho OQ-01 … OQ-14, Q1 … Q3 (`docs/01`) và SQ-01 … SQ-04 (`docs/02`).
+4. Các thay đổi sau review (Phase 9) đã merge vào `main` (PR #192, #193). GitHub Assignee đã gán đủ 150/150 task. PO chưa xác nhận lại quyết định giữ nguyên MoSCoW (`docs/06_Team_Review_Response.md`, mục 4).
 
 **Giả định (KNOWN_ASSUMPTIONS):**
 - Tài khoản quản trị đầu tiên được nạp sẵn khi cài đặt; các tài khoản khác do US-41 tạo.
@@ -103,12 +102,3 @@ Nhóm rà bằng script kiểm tra riêng và đọc lại tài liệu. Script c
 - Ba AC (US-24, US-25, US-28) dùng từ "nhiều" trong điều kiện Given để mô tả bối cảnh dữ liệu (không phải tiêu chí đo); có thể thay bằng số cụ thể khi viết test.
 - File 05 dựng lại từ mẫu bằng thư viện, nên các hình trang trí (shape) trong mẫu gốc không còn; bảng, màu tiêu đề và phông giữ theo mẫu.
 
-Lệnh chuyển PDF sau khi đóng trình xem (chạy trong thư mục project):
-
-```
-mkdir references
-move "01_ Huong dan lap ke hoach phat hieu yeu cau BTL (Elicitation).pdf" references\
-move "08. Bo Bai Tap.pdf" references\
-```
-
-Sau khi chuyển, sửa dòng 19, 20 của bảng mục 1 và phần cấu trúc trong `README.md`.

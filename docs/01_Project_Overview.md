@@ -7,7 +7,7 @@
 | Nhóm thực hiện | Nhóm 24 — Châu Tuấn, Thanh Tuấn, Thành Nam, Đức Quang, Mạnh Trường, Tiến Thành |
 | Đơn vị thực hiện | Nhóm 24, bài tập lớn môn Nhập môn Công nghệ phần mềm (IT4080) |
 | Nhà tài trợ | Chưa xác định theo phần giới thiệu bài toán (đề bài chỉ nêu Ban quản trị có nhu cầu xây dựng phần mềm). Ví dụ Charter ở Chương 4 nêu Công ty ABC, chỉ để tham khảo. Với BTL: TEAM DECISION |
-| Nguồn chính | `08. Bo Bai Tap.pdf` (phần "Giới thiệu bài toán", trang 6–8, đứng trước Chương 2; Chương 2–3 cho quy trình), `01_ Huong dan lap ke hoach phat hieu yeu cau BTL (Elicitation).pdf` |
+| Nguồn chính | `references/08. Bo Bai Tap.pdf` (phần "Giới thiệu bài toán", trang 6–8, đứng trước Chương 2; Chương 2–3 cho quy trình), `01_ Huong dan lap ke hoach phat hieu yeu cau BTL (Elicitation).pdf` |
 
 > **Về nguồn dữ liệu.** Nhóm **chưa** phỏng vấn, khảo sát hay quan sát thực tế Ban quản trị, cư dân hoặc bên liên quan nào. Nội dung về stakeholder, nhu cầu và pain point trong tài liệu này có hai nguồn:
 > - **[Đề bài]**: trích hoặc diễn giải lại từ đề bài BlueMoon.
