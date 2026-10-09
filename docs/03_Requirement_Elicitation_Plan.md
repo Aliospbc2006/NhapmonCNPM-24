@@ -82,8 +82,41 @@ Mỗi stakeholder là một **vai trò**, không gắn với người cụ thể
 | **Semi-structured interview (role-play)** | 4 biên bản, mỗi biên bản 10–12 câu hỏi theo Interview Script (mục 6) | BQT, TQ, CD, CQ | Biên bản trong `docs/interviews/`, Wish List, RAW |
 | **Document analysis** | Đọc đề bài, hướng dẫn Elicitation; phân tích biểu mẫu Excel giả định | PS-01, PS-02, GD-01, DA-01, DA-02 | Ràng buộc phạm vi, trường dữ liệu, loại khoản phí |
 | **Workflow analysis** | Mô hình hóa quy trình As-Is và pain point | WA-01, WA-02 | Cơ sở cho As-Is và To-Be ở phase sau |
+| **Observation (giả lập, chưa thực hiện)** | Kịch bản quan sát thu phí, mục 4.1 | TQ | SIM-OBS-01: kiểm tra chéo pain point |
+| **Survey (giả lập, chưa thực hiện)** | Mẫu khảo sát cư dân, mục 4.2 | CD | SIM-SURVEY-01: kiểm tra chéo nhu cầu cư dân |
 
-Hướng dẫn gốc còn có quan sát công việc, khảo sát cư dân và workshop với Ban quản trị. Nhóm **không làm** các kỹ thuật này vì không gặp được stakeholder. Phần thiếu này được ghi vào Open Questions và danh sách mục cần xác thực.
+Hướng dẫn gốc còn có quan sát công việc, khảo sát cư dân và workshop với Ban quản trị. Nhóm không gặp được stakeholder thật nên **không thực hiện** các kỹ thuật này với người thật. Để giữ đủ các kỹ thuật mà hướng dẫn nêu, nhóm bổ sung hai tài liệu **giả lập** ở mục 4.1 và 4.2. Workshop vẫn chưa làm và nằm trong danh sách mục cần xác thực.
+
+**Quy tắc cho hai tài liệu giả lập:**
+- Chỉ dùng để *kiểm tra chéo* các WISH, RAW và pain point đã có; **không** sinh RAW, Epic, User Story hay thay đổi phạm vi.
+- Không có số liệu đo thật (thời gian, số lỗi), không có người tham gia thật, không có ngày hay chữ ký. Ghi "chưa đo" khi thiếu số liệu.
+- Nếu sau này làm thật, kết quả thật thay thế nội dung giả lập và mọi thay đổi yêu cầu phải qua quy trình thay đổi backlog.
+
+### 4.1 SIM-OBS-01 — Kịch bản quan sát thu phí (giả lập)
+
+| Mục | Nội dung |
+|---|---|
+| Đối tượng quan sát | Thủ quỹ (TQ) trong một buổi thu phí hằng tháng tại văn phòng Ban quản trị |
+| Cơ sở | WA-01, SIM-INT-TQ (Q02–Q07) |
+| Tình huống cần quan sát | (1) hộ đến nộp, thủ quỹ tìm hộ trong Excel/sổ; (2) tra số tiền phải nộp; (3) nhận tiền, ghi sổ, viết biên lai tay; (4) hộ nộp thiếu hoặc nộp gộp; (5) phát hiện ghi sai và sửa |
+| Cần ghi lại | Các bước thao tác, thời gian mỗi bước (đo bằng đồng hồ), điểm vấp, chỗ phải ghi hai lần, chỗ sửa bằng tay |
+| Đối chiếu với | PP-02, PP-04, PP-05, PP-06, PP-12; RAW-013, RAW-014, RAW-015, RAW-016 |
+| Kết quả hiện có | **Chưa thực hiện, chưa có số liệu.** Cột "thời gian" để trống cho tới khi quan sát thật |
+
+### 4.2 SIM-SURVEY-01 — Mẫu khảo sát cư dân (giả lập)
+
+Mẫu ngắn, trả lời bằng thang 1–5 hoặc chọn một. Dựa trên SIM-INT-CD, chỉ để kiểm tra chéo các nhu cầu đã có (PP-06, PP-08, PP-09, WISH-24, WISH-25).
+
+| # | Câu hỏi | Kiểu trả lời | Đối chiếu |
+|---|---|---|---|
+| S1 | Anh/chị biết số tiền phí mình phải đóng mỗi tháng bằng cách nào? | Chọn một: thông báo giấy, tin nhắn, hỏi trực tiếp, khác | PP-08 |
+| S2 | Anh/chị có hiểu số tiền đó được tính ra sao không? | Thang 1–5 | PP-08 |
+| S3 | Anh/chị có nhận biên lai/chứng từ sau khi đóng không, và có đủ thông tin không? | Có/Không; thang 1–5 | PP-06 |
+| S4 | Khi gia đình có thay đổi (chuyển đến, tạm vắng, tạm trú), anh/chị báo cho Ban quản trị bằng cách nào? | Chọn một | PP-09 |
+| S5 | Anh/chị có lo ngại về việc thông tin cá nhân được lưu không? | Thang 1–5 | PP-10 |
+| S6 | Anh/chị có muốn tự xem phí hoặc được nhắc nộp phí không? (không thuộc v1.0) | Có/Không | WISH-24, WISH-25 |
+
+Kết quả hiện có: **chưa phát hành, chưa có phản hồi.** Không dùng mẫu này làm bằng chứng cho bất kỳ yêu cầu nào.
 
 ## 5. Mục tiêu thông tin cần thu từ từng stakeholder
 

@@ -129,7 +129,7 @@ Bản sơ bộ, sẽ tinh chỉnh khi có Product Backlog và bắt đầu code.
 
 ## 7. Quy tắc Git/GitHub (mức đơn giản)
 
-> Repository GitHub của nhóm: https://github.com/Aliospbc2006/NhapmonCNPM-24. Thư mục project hiện chưa được commit hay push; việc đẩy lên repo chỉ làm khi nhóm yêu cầu rõ ràng (xem `docs/05_GitHub_Project_Setup.md`).
+> Repository GitHub của nhóm: https://github.com/Aliospbc2006/NhapmonCNPM-24. Các thay đổi sau review (Phase 9) nằm trên nhánh `fix/team-review-feedback`, chưa merge vào `main` (xem `docs/06_Team_Review_Response.md`).
 
 1. **Một repository chung**, nhánh chính là `main`. **Không push trực tiếp lên `main`.**
 2. **Nhánh làm việc** đặt tên theo mẫu:
@@ -214,7 +214,8 @@ Kế hoạch theo thứ tự công đoạn, **chưa có ngày cụ thể** vì n
 | Phase 5 | Product Backlog (thứ tự, MoSCoW, Story Point) | `06_Product_Backlog_Sprint_Plan.xlsx` |
 | Phase 6 | Sprint Planning: Sprint 1, 2, 3 và Sprint Backlog | `06_Product_Backlog_Sprint_Plan.xlsx` |
 | Phase 7 | Rà soát cuối, chuẩn bị GitHub Project | `05_GitHub_Project_Setup.md`, `FINAL_DELIVERABLES.md` |
-| Phase 8 | Rà lại văn phong và cách dùng từ giữa các file | `WRITING_STYLE_REVIEW.md` |
+| Phase 8 | Tạo GitHub Project, Issue User Story và task | `05_GitHub_Project_Setup.md` |
+| Phase 9 | Xác thực và xử lý review của thành viên | `06_Team_Review_Response.md` |
 | Sprint 1 → 3 | Thực hiện theo Sprint Backlog (khi bắt đầu giai đoạn code) | Xem sheet Sprint_1, Sprint_2, Sprint_3 |
 
 ## Câu hỏi mở (liên quan Scrum)

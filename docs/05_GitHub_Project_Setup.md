@@ -103,4 +103,4 @@ Chi tiết quy trình Scrum, Definition of Done và vai trò: `docs/02_Agile_Scr
 | Issue từ 41 User Story, thêm vào Project | Xong |
 | Issue từ 150 task (55 + 46 + 49), thêm vào Project, 117 sub-issue | Xong |
 | GitHub username của thành viên | Chưa có, chờ nhóm cung cấp |
-| Commit, push file local | Chưa làm |
+| Thay đổi Phase 9 (review của thành viên) | Nằm trên nhánh `fix/team-review-feedback`, chưa merge vào `main` |

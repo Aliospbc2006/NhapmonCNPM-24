@@ -73,7 +73,7 @@ Mục tiêu cụ thể cho v1.0 [Giả lập, suy ra từ đề bài]:
 
 Lưu ý:
 - Cư dân/hộ gia đình **không** dùng phần mềm ở v1.0. Đề bài mô tả ứng dụng desktop dành cho Ban quản trị. Cư dân chỉ là stakeholder (xem AS-02).
-- Việc chia nhỏ quyền trong Ban quản trị (trưởng ban, kế toán, thu ngân) chưa được đề bài quy định. Xem AS-04 và Câu hỏi mở Q3.
+- Đề bài không quy định chi tiết việc chia quyền trong Ban quản trị. Nhóm chốt mô hình ba vai trò thuộc Ban quản trị: Quản trị hệ thống, Thành viên Ban quản trị và Thủ quỹ (xem AS-04 và Câu hỏi mở Q3). Bài 6.1 (Chương 6, bộ bài tập) cũng dùng hai tác nhân: người quản lý hộ khẩu/nhân khẩu và kế toán thu phí.
 
 ## 6. Stakeholder
 
@@ -137,9 +137,9 @@ Bốn hạng mục này không có màn hình, bảng dữ liệu, User Story ha
 | ID | Giả định | Căn cứ |
 |---|---|---|
 | AS-01 | Mọi stakeholder input, Client Wish List, RAW requirement và User Story là **giả lập** dựa trên đề bài. Nhóm không có biên bản phỏng vấn hay khảo sát thật. | Quy định của nhóm |
-| AS-02 | Ở v1.0, người dùng hệ thống chỉ là Ban quản trị. Cư dân/hộ gia đình là stakeholder, không đăng nhập. Các nhu cầu dành cho cư dân tự phục vụ thuộc ngoài v1.0. | Đề bài mô tả ứng dụng desktop cho Ban quản trị; chức năng "chỉ truy cập được sau khi Ban quản trị đăng nhập" |
+| AS-02 | Ở v1.0, người dùng hệ thống chỉ thuộc Ban quản trị (gồm các vai trò ở AS-04). Cư dân/hộ gia đình là stakeholder, không đăng nhập. Các nhu cầu dành cho cư dân tự phục vụ thuộc ngoài v1.0. | Đề bài mô tả ứng dụng desktop cho Ban quản trị; chức năng "chỉ truy cập được sau khi Ban quản trị đăng nhập" |
 | AS-03 | Tài khoản Ban quản trị được cấp sẵn. v1.0 chỉ gồm đăng nhập và đổi mật khẩu, không có chức năng tự đăng ký. Tài khoản được Quản trị hệ thống tạo trong phần mềm (US-41); tài khoản quản trị đầu tiên được nạp sẵn khi cài đặt (giả định). | Đề bài nêu "tài khoản đã cung cấp"; luồng nghiệp vụ có bước "Đăng kí tài khoản" nên cần nhóm xác nhận (Q1) |
-| AS-04 | Ban đầu coi Ban quản trị là một nhóm người dùng. Việc phân quyền chi tiết (trưởng ban, kế toán, thu ngân) xác định ở bước yêu cầu phi chức năng. | Đề bài chưa quy định |
+| AS-04 | Người dùng v1.0 đều thuộc Ban quản trị và có ba vai trò: **Quản trị hệ thống** (tạo và vô hiệu hóa tài khoản, phân quyền, sao lưu), **Thành viên Ban quản trị** (quản lý hộ, nhân khẩu, khoản thu, xem thống kê) và **Thủ quỹ** (ghi nhận thu phí, tra cứu, in biên lai; không sửa hộ, nhân khẩu, khoản thu, đơn giá, tài khoản). Ma trận quyền chi tiết do US-05 và NFR-002 xác định. | Đề bài chưa quy định; nhóm chốt sau review của thành viên (Bài 6.1 làm tham khảo); cần xác thực với khách hàng thật (Q3) |
 | AS-05 | Phí dịch vụ và phí quản lý được tính theo diện tích căn hộ × đơn giá do Ban quản trị thiết lập. Hệ thống không cố định mức giá. | Đề bài chỉ nêu khoảng giá |
 | AS-06 | Khoản đóng góp tự nguyện thu theo đợt và số tiền do hộ tự nguyện; hệ thống chỉ ghi nhận, không ép buộc. | Đề bài |
 | AS-07 | v1.0 hỗ trợ lập danh sách khoản phải thu theo hộ; việc gửi thông báo thu tiền (in, giao tận nơi, …) Ban quản trị thực hiện ngoài hệ thống. | Giả lập, cần xác nhận (Q2) |
@@ -166,6 +166,6 @@ Bốn hạng mục này không có màn hình, bảng dữ liệu, User Story ha
 |---|---|---|
 | Q1 | v1.0 có cần "Đăng kí tài khoản" không, hay chỉ tài khoản cấp sẵn (AS-03)? | Phạm vi nhóm chức năng 1 |
 | Q2 | v1.0 chỉ lập danh sách phải thu hay có in/xuất thông báo thu tiền (AS-07)? | Phạm vi nhóm chức năng 5 |
-| Q3 | Ban quản trị có phân quyền nhiều vai trò khác nhau không (AS-04)? | NFR phân quyền |
+| Q3 | Ban quản trị có thật sự phân quyền theo ba vai trò ở AS-04 không, và ma trận quyền cụ thể ra sao? | NFR phân quyền (NFR-002) |
 
 Các câu hỏi về phân vai Scrum, độ dài sprint, kênh liên lạc nằm trong `02_Agile_Scrum_Plan.md`.
