@@ -4,7 +4,7 @@ Review do Thanh Tuấn (Product Owner) thực hiện, gồm ba phần: Requireme
 
 Nguyên tắc xử lý: không đổi phạm vi v1.0, không thêm requirement mới, không bịa dữ liệu khảo sát/quan sát. Stakeholder statement, Wish, RAW và User Story vẫn là **Simulated stakeholder input**.
 
-Kết quả: phần lớn lỗi review nêu là đúng và đã sửa (mục 1 và 3); hai đề xuất đổi phạm vi không áp dụng (mục 2); câu hỏi MoSCoW để PO quyết định (mục 4). Phần Product Backlog, Sprint và Task được review xác nhận không có lỗi kỹ thuật.
+Kết quả: phần lớn lỗi review nêu là đúng và đã sửa (mục 1 và 3); hai đề xuất đổi phạm vi không áp dụng (mục 2); MoSCoW đã được xem xét và giữ nguyên (mục 4). Phần Product Backlog, Sprint và Task được review xác nhận không có lỗi kỹ thuật.
 
 ## 1. Xác thực từng ý
 
@@ -37,7 +37,7 @@ Kết quả: phần lớn lỗi review nêu là đúng và đã sửa (mục 1 v
 | # | Ý kiến | Xác thực | Xử lý |
 |---|---|---|---|
 | B1 | Font không phù hợp tiếng Việt | **Đúng.** `05` và `06` dùng Century Gothic. | Đổi sang Arial trong `styles.xml` của hai file (định dạng khác giữ nguyên). File mẫu giảng viên trong `templates/` không đụng tới. |
-| B2 | 21 Must (51%) hơi cao; xem lại US-03, US-17, US-31, US-33 | **Đúng là câu hỏi hợp lệ.** Không có lỗi "tất cả đều Must", Priority khớp MoSCoW. | **Không đổi.** MoSCoW là quyết định của PO, xem mục 4. |
+| B2 | 21 Must (51%) hơi cao; xem lại US-03, US-17, US-31, US-33 | **Đúng là câu hỏi hợp lệ.** Không có lỗi "tất cả đều Must", Priority khớp MoSCoW. | **Không đổi.** Đã xem xét từng story với đề bài, xem mục 4. |
 | B3 | Story Point, Dependency, Sprint 1/2/3, 150 task, Workload | Review xác nhận không có lỗi (không story >5 SP, không dependency ngược sprint, 0 task tự review, task lớn nhất S1-T39 8 giờ). | Giữ nguyên. Ước lượng lại bằng Planning Poker ở Sprint Planning; theo dõi S1-T39. |
 | B4 | Epic, Feature, User Story, AC, truy vết RAW | Review xác nhận hợp lý. | Giữ nguyên. |
 
@@ -80,20 +80,20 @@ Giữ nguyên ID và số lượng RAW. Với mỗi RAW:
 
 Cột *Stakeholder*, *Source*, *Evidence Reference* của các RAW này không đổi.
 
-## 4. Việc dành cho PO (chưa áp dụng)
+## 4. Quyết định về MoSCoW
 
-Đây là đề xuất để PO cân nhắc, nhóm **chưa sửa** MoSCoW trong file nào. Nếu đổi MoSCoW thì phải đổi cùng lúc cột Priority (Must = High, Should = Medium, Could = Low), Backlog, Sprint Plan, nhãn và field trên GitHub Project.
+Review hỏi lại US-03, US-17, US-31, US-33 vì 21/41 story (51,2%) là Must. Ngày 2026-10-09 Scrum Master (Châu Tuấn) ủy quyền cho Claude Code quyết định theo kế hoạch xử lý review; PO chưa xác nhận lại và vẫn có thể đổi. Các story được đối chiếu với đoạn mô tả phạm vi v1.0 và luồng nghiệp vụ trong đề bài (`08. Bo Bai Tap.pdf`, mục giới thiệu BlueMoon). **Kết quả: không đổi MoSCoW của story nào**, nên Priority, Backlog, Sprint Plan và GitHub Project giữ nguyên.
 
-| Story | Hiện tại | Gợi ý |
-|---|---|---|
-| US-03 Đổi mật khẩu | Must | Giữ Must: mật khẩu ban đầu được cấp sẵn nên người dùng cần đổi được. |
-| US-33 Tổng đóng góp tự nguyện theo đợt | Must | Giữ Must: thống kê khoản đóng góp là nhu cầu có trong đề bài. |
-| US-17 Đổi đơn giá, hạn nộp, ngừng áp dụng khoản thu | Must | PO cân nhắc hạ xuống Should nếu ở bản đầu có thể tạo khoản thu mới thay cho việc sửa. |
-| US-31 Danh sách hộ chưa đóng hoặc còn nợ | Must | PO cân nhắc: tra cứu từng hộ (US-27) đã đủ cho luồng thu, còn danh sách tổng hợp là thống kê. Nếu hạ thì Priority hạ theo. |
-| US-41 Tạo, vô hiệu hóa tài khoản | Should | PO cân nhắc nâng lên Must, vì cấp tài khoản là bước đầu của luồng sử dụng và hiện đang ở Sprint 2. |
-| Có thêm trường dân cư của Bài 6.1 vào US-10 không | Chưa | Khuyến nghị **không thêm** (bài toán khác, AS-18/OQ-07 đang mở). |
+| Story | MoSCoW | Quyết định | Căn cứ |
+|---|---|---|---|
+| US-03 Đổi mật khẩu | Must | Giữ | Đề bài: Ban quản trị "có thể quản lý các thông tin cá nhân và thay đổi mật khẩu đăng nhập". RAW-002 có nguồn Đề bài. |
+| US-17 Đổi đơn giá, hạn nộp, ngừng áp dụng khoản thu | Must | Giữ | Đề bài: v1.0 gồm "quản lý thông tin các khoản thu phí đóng góp"; luồng nghiệp vụ có "Tạo khoản thu". RAW-010 có nguồn Đề bài. |
+| US-31 Danh sách hộ chưa đóng hoặc còn nợ | Must | Giữ | Đề bài: có "một số thông tin thống kê cơ bản giúp Ban quản trị nắm được hiện trạng các khoản thu". Danh sách hộ chưa đóng là thông tin hiện trạng cơ bản nhất, giải quyết PP-02. |
+| US-33 Tổng đóng góp tự nguyện theo đợt | Must | Giữ | Luồng nghiệp vụ số 4 của đề bài là "Thống kê các khoản đóng góp". RAW-019 có nguồn Đề bài. |
+| US-41 Tạo, vô hiệu hóa tài khoản | Should | Giữ | Đề bài nói chức năng truy cập "với tài khoản đã cung cấp", không yêu cầu tạo tài khoản trong hệ thống. RAW-001 loại trừ tự đăng ký (AS-03). Demo vẫn chạy được bằng tài khoản quản trị nạp sẵn. |
+| Thêm trường dân cư của Bài 6.1 vào US-10 | Chưa thêm | Giữ | Là bài toán khác; AS-18 và OQ-07 đang mở. |
 
-Khi PO quyết định, nhóm sẽ cập nhật 05/06 và GitHub rồi ghi vào mục này.
+Về tỷ lệ Must: mức 51,2% được chấp nhận vì các story được review hỏi đều có căn cứ trực tiếp trong đề bài. Nếu Sprint Planning thấy thiếu năng lực, ứng viên cân nhắc hạ đầu tiên là US-31 (chỉ có nguồn RAW giả lập RAW-020 ngoài đề bài), và khi đó phải đổi đồng thời Priority, file 05/06 và GitHub Project.
 
 ## 5. Còn mở
 
