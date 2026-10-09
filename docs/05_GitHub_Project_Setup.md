@@ -76,8 +76,8 @@ GitHub không cho đặt tên field là "Type" hoặc "Reviewer" (tên dành ri�
 
 ## Assignee và Reviewer
 
-- Workbook ghi người phụ trách bằng tên (Châu Tuấn, Thanh Tuấn, Thành Nam, Đức Quang, Mạnh Trường, Tiến Thành). Tên người phụ trách nằm trong body Issue (dòng `Assignee:`). GitHub Assignee đã gán cho Thanh Tuấn (`GreentunaNTT`, 30 task), Thành Nam (`vothanhnamnn`, 22 task) và Mạnh Trường (`truonglm16375`, 25 task). Châu Tuấn, Đức Quang, Tiến Thành chưa gán (xem bên dưới).
-- Đức Quang (`BlueKevin66-code`, 24 task) và Tiến Thành (`thenggne`, 25 task) chưa là collaborator của repository nên GitHub chưa cho gán; cần mời họ vào repo, sau đó gán theo dòng `Assignee:`. Châu Tuấn (24 task) chưa có username được xác nhận nên chưa gán, để tránh đoán sai. Story (41 Issue) không có người phụ trách riêng nên để trống.
+- Workbook ghi người phụ trách bằng tên (Châu Tuấn, Thanh Tuấn, Thành Nam, Đức Quang, Mạnh Trường, Tiến Thành). Tên người phụ trách nằm trong body Issue (dòng `Assignee:`). GitHub Assignee đã gán cho cả 150 task theo dòng `Assignee:`: Châu Tuấn (`Aliospbc2006`, 24), Thanh Tuấn (`GreentunaNTT`, 30), Thành Nam (`vothanhnamnn`, 22), Đức Quang (`BlueKevin66-code`, 24), Mạnh Trường (`truonglm16375`, 25), Tiến Thành (`thenggne`, 25).
+- Story (41 Issue) không có người phụ trách riêng trong workbook nên Assignee để trống. Khi đổi người làm task, sửa cả dòng `Assignee:` trong body và Assignee của Issue.
 - Reviewer ghi trong body Issue và field **Task Reviewer**. Người review khác người thực hiện.
 
 ## Dùng board hằng ngày
@@ -102,5 +102,5 @@ Chi tiết quy trình Scrum, Definition of Done và vai trò: `docs/02_Agile_Scr
 | Custom fields | Xong (Item Type, Task Reviewer thay cho Type, Reviewer) |
 | Issue từ 41 User Story, thêm vào Project | Xong |
 | Issue từ 150 task (55 + 46 + 49), thêm vào Project, 117 sub-issue | Xong |
-| Gán GitHub Assignee | 77/150 task đã gán (3 thành viên). Còn 73 task: Châu Tuấn, Đức Quang, Tiến Thành |
+| Gán GitHub Assignee | Xong: 150/150 task |
 | Thay đổi Phase 9 (review của thành viên) | Nằm trên nhánh `fix/team-review-feedback`, chưa merge vào `main` |

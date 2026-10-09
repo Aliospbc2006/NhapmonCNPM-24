@@ -89,7 +89,7 @@ GitHub Project: [BlueMoon v1.0 - Nhóm 24](https://github.com/users/Aliospbc2006
 
 - Phase 0–8 đã xong (kế hoạch, tài liệu, GitHub Project); đã xử lý review của thành viên (Phase 9), đang chờ nhóm và giảng viên xem.
 - Nội dung mô tả đã viết bằng tiếng Việt. Tiêu đề, tên cột và thuật ngữ chuẩn vẫn giữ tiếng Anh. Review của thành viên đã được xác thực và xử lý ở `docs/06_Team_Review_Response.md`.
-- Phase 8: đã tạo GitHub Project, 41 Issue User Story và 150 Issue task từ dữ liệu planning. GitHub Assignee đã gán cho 77/150 task (Thanh Tuấn, Thành Nam, Mạnh Trường); 73 task của Châu Tuấn, Đức Quang, Tiến Thành chờ username hoặc lời mời vào repository.
+- Phase 8: đã tạo GitHub Project, 41 Issue User Story và 150 Issue task từ dữ liệu planning. GitHub Assignee đã gán cho 150/150 task theo người phụ trách trong workbook.
 - Chưa có code ứng dụng; các thay đổi Phase 9 nằm trên nhánh `fix/team-review-feedback`, chờ nhóm xem rồi mới merge vào `main`.
 - Chưa có task nào Done. Giờ làm và người nhận task mới chỉ là đề xuất.
 - Các việc còn tồn đọng nằm ở `docs/FINAL_DELIVERABLES.md`, mục 4.
