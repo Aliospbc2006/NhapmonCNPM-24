@@ -82,7 +82,7 @@ Thông tin hay thiếu, mỗi lần gửi mỗi khác, nhất là người ở t
 **Simulated stakeholder answer:**
 Thường cần họ tên, ngày sinh, giới tính, quan hệ với chủ hộ, số giấy tờ tùy thân, và tình trạng cư trú là thường xuyên, tạm trú hay tạm vắng, kèm thời hạn. Còn biểu mẫu cụ thể thì tùy từng lần yêu cầu, mình cũng không nhớ hết.
 
-**Analyst note:** *Assumption AS-18:* v1.0 lưu các trường cơ bản trên; biểu mẫu và trường chính xác theo quy định hiện hành cần xác thực (OQ-07). Việc lưu số giấy tờ tùy thân là điểm cần thận trọng về bảo mật (OQ-08).
+**Analyst note:** *Assumption AS-18:* v1.0 lưu các trường cơ bản trên; biểu mẫu và trường chính xác theo quy định hiện hành cần xác thực (OQ-07). Nguồn tham khảo: Bài 6.1 (Chương 6, `08. Bo Bai Tap.pdf`) liệt kê các trường của sổ hộ khẩu (họ tên, ngày sinh, giới tính, số CMND/CCCD, ngày cấp, nơi cấp, thông tin lưu trú). Đó là đặc tả của một bài toán khác (tổ dân phố), chỉ dùng để tham khảo, không phải đề bài BlueMoon (PS-01). Việc lưu số giấy tờ tùy thân là điểm cần thận trọng về bảo mật (OQ-08).
 
 **Requirement candidates discovered:**
 - Thông tin nhân khẩu cơ bản và quan hệ chủ hộ → RAW-006

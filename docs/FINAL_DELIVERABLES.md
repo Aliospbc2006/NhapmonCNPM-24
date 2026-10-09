@@ -18,8 +18,7 @@ Danh sách chỉ có các file **thật sự nằm trong project**. Cột Owner 
 | 10 | `docs/04_AsIs_ToBe.md` | As-Is, pain point, To-Be v1.0, roadmap v2.0, truy vết | PO Thanh Tuấn | 3 | Hoàn thành, chờ nhóm xác nhận |
 | 11 | `docs/05_GitHub_Project_Setup.md` | Hướng dẫn dựng GitHub Project, Issue, quản lý Sprint | SM Châu Tuấn | 7 | Hoàn thành (chỉ hướng dẫn, chưa tạo Project) |
 | 12 | `docs/FINAL_DELIVERABLES.md` | Danh sách deliverable và kết quả rà soát (file này) | SM Châu Tuấn | 7 | Hoàn thành |
-| 13 | `docs/TEACHER_REQUIREMENTS_AUDIT.md` | Đối chiếu project với yêu cầu trong 2 PDF của giảng viên (giới thiệu bài toán, Chương 2, Chương 3, hướng dẫn Elicitation) | SM Châu Tuấn | 7 | Hoàn thành |
-| 14 | `docs/WRITING_STYLE_REVIEW.md` | Ghi lại lần rà văn phong và thống nhất cách viết | SM Châu Tuấn | 8 | Hoàn thành |
+| 13 | `docs/06_Team_Review_Response.md` | Xác thực review của thành viên nhóm, danh sách lỗi đã sửa, việc để PO quyết | SM Châu Tuấn | 9 | Hoàn thành |
 | 15 | `deliverables/04_Raw_Requirements.xlsx` | Client Wish List, 30 RAW, NFR, Interview Summary | PO Thanh Tuấn | 2 | Hoàn thành, chờ nhóm xác nhận |
 | 16 | `deliverables/05_Epic_UserStory.xlsx` | 7 Epic, 24 Feature, 41 User Story, 123 AC (theo mẫu giảng viên) | PO Thanh Tuấn | 4, 5 | Hoàn thành, chờ nhóm xác nhận |
 | 17 | `deliverables/06_Product_Backlog_Sprint_Plan.xlsx` | Product Backlog, Traceability, Sprint 1/2/3, Workload, Legend | PO Thanh Tuấn và SM Châu Tuấn | 5, 6, 7 | Hoàn thành, chờ nhóm xác nhận |
@@ -72,10 +71,10 @@ Nhóm rà bằng script kiểm tra riêng và đọc lại tài liệu. Script c
 - `docs/01`, `docs/03`: nguồn của một số chi tiết (tên đại diện, ngân sách, Windows, loại trừ nhập liệu) trước đây ghi "Bài 4.1". Đã ghi lại là ví dụ Charter ở Chương 4, ngoài phạm vi đối chiếu, chỉ để tham khảo và là giả định của nhóm.
 - `docs/01`: bổ sung hai dòng Đơn vị thực hiện, Nhà tài trợ (Bảng 2-1 của Bài 2.1).
 - `docs/02`: bổ sung mục 9 (lựa chọn mô hình Agile/Scrum kèm lý do), mục 10 (công cụ, môi trường), mục 11 (kế hoạch tổng thể ban đầu, chưa có ngày) và quy tắc quyền deploy (mục 7, điều 9).
-- Báo cáo đối chiếu: `docs/TEACHER_REQUIREMENTS_AUDIT.md`.
+- Đối chiếu yêu cầu giảng viên: xem `docs/06_Team_Review_Response.md` (file `TEACHER_REQUIREMENTS_AUDIT.md` được nhắc ở bản cũ chưa từng có trong repository).
 
 **Đã sửa ở bước rà văn phong (Phase 8):**
-- Viết lại các đoạn mô tả cho ngắn và tự nhiên hơn, bỏ các cụm từ chung chung, thống nhất cách gọi các chức năng giữa các file. Không đổi ID, số liệu, phạm vi hay quan hệ truy vết. Chi tiết: `docs/WRITING_STYLE_REVIEW.md`.
+- Viết lại các đoạn mô tả cho ngắn và tự nhiên hơn, bỏ các cụm từ chung chung, thống nhất cách gọi các chức năng giữa các file. Không đổi ID, số liệu, phạm vi hay quan hệ truy vết. (File `WRITING_STYLE_REVIEW.md` được nhắc ở bản cũ chưa từng có trong repository, đã bỏ tham chiếu.)
 
 **Mâu thuẫn giả lập được giữ lại và có chú thích (không phải lỗi):**
 - BQT muốn nhập sẵn dữ liệu Excel cũ (SIM-INT-BQT-Q04), trong khi ví dụ Charter (Chương 4, chỉ tham khảo) nêu nhập liệu ngoài phạm vi (giả định AS-08 của nhóm): ghi OQ-12, import Excel không đưa vào v1.0.
@@ -89,7 +88,7 @@ Nhóm rà bằng script kiểm tra riêng và đọc lại tài liệu. Script c
 2. Nhóm chưa xác nhận tên thành viên, vai trò, độ dài sprint (SQ-02) và ngày sprint. Giờ làm và người nhận task chỉ là **đề xuất**.
 3. Definition of Done mới là bản nháp. Sprint 1 có một task để chốt DoD.
 4. Chưa có câu trả lời cho OQ-01 … OQ-14, Q1 … Q3 (`docs/01`) và SQ-01 … SQ-04 (`docs/02`).
-5. Chưa tạo GitHub Project và Issue, chưa commit hay push (theo yêu cầu).
+5. Các thay đổi sau review (Phase 9) nằm trên nhánh `fix/team-review-feedback`, chưa merge vào `main`. GitHub Assignee còn trống, chờ username của thành viên.
 
 **Giả định (KNOWN_ASSUMPTIONS):**
 - Tài khoản quản trị đầu tiên được nạp sẵn khi cài đặt; các tài khoản khác do US-41 tạo.

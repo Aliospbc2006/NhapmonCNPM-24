@@ -16,7 +16,7 @@ Nhóm đối chiếu sheet `Raw_Requirements` trong Excel với dữ liệu ngu�
 |---|---|---|
 | N-1 | Ba file cùng tiền tố `04_`: `docs/04_Interview_Report.md`, `docs/04_AsIs_ToBe.md`, `deliverables/04_Raw_Requirements.xlsx`. | Giữ tên file theo yêu cầu. Cân nhắc đánh số lại ở phase tổng hợp. |
 | N-2 | Phase 2 gợi ý 6 Epic dự kiến, trong khi hướng dẫn BTL nêu 5 Epic. | Quyết định ở phase Epic/Feature (ví dụ gộp hộ gia đình và nhân khẩu). |
-| N-3 | Một số con số NFR (3 giây, quy mô, số lần đăng nhập sai) là giả định trong RAW-022, RAW-027, RAW-028. | Mục 6 tinh chỉnh thành tiêu chí kiểm thử và gắn nhãn *proposed / TBD*; RAW giữ nguyên, chỉ cập nhật khi nhóm chủ động quyết định. |
+| N-3 | Một số con số NFR (3 giây, quy mô, số lần đăng nhập sai) là giả định trong RAW-022, RAW-027, RAW-028. | Mục 6 tinh chỉnh thành tiêu chí kiểm thử và gắn nhãn *proposed / TBD*. Ở Phase 9, RAW-022…RAW-028 được viết lại ở mức nhu cầu của stakeholder (không còn số liệu cụ thể); các con số nằm ở sheet NFR và mục 6 này, nội dung RAW cũ lưu ở cột Notes. |
 | N-4 | RAW-016 (tìm hộ, kèm số tiền phải nộp) giao một phần với RAW-018 (công nợ), RAW-020 (hộ chưa nộp) giao một phần với RAW-018. Phase 2 đã tách vì khác mục đích (tìm một hộ so với báo cáo toàn bộ hộ). | Giữ nguyên; phân ranh bằng Acceptance Criteria ở phase User Story. |
 | N-5 | Bảng Pain Point ở Phase 2 có PP-01…PP-10. Phase 3 phân loại lại PP-10 thành *concern* (mối lo, không phải lỗi quy trình hiện tại), bổ sung PP-11, PP-12 và mở rộng liên kết RAW. | Báo cáo Phase 2 và Interview_Summary trong Excel không sửa (chỉ liệt kê PP-01…10). |
 
@@ -68,9 +68,9 @@ Có **12 mục**: 11 pain point của quy trình hiện tại và 1 concern (m�
 | PP-05 | Process pain | Truy vết kém: sổ giấy và Excel không ghi ai sửa gì, khi nào, vì sao; sửa đè làm mất dấu vết. | Suy ra (đặc điểm của sổ giấy và Excel); chi tiết: giả lập | AI-07 | RAW-015, RAW-025 | SIM-INT-TQ-Q06; SIM-INT-BQT-Q09 |
 | PP-06 | Process pain | Biên lai viết tay tốn thời gian và có thể thiếu thông tin (khoản, kỳ, cách tính). | Suy ra từ đề bài (giấy tờ thu chi thủ công) | AI-06 | RAW-014 | SIM-INT-TQ-Q07; SIM-INT-CD-Q03, Q04; PS-01 |
 | PP-07 | Process pain | Thông tin hộ, nhân khẩu rời rạc nên khi cơ quan chức năng yêu cầu, Ban phải gom thủ công từ nhiều nguồn, mất thời gian. | Suy ra từ đề bài (cung cấp thông tin khi được yêu cầu, quản lý thủ công) | AI-11, AI-13 | RAW-003, RAW-006, RAW-009, RAW-017 | SIM-INT-BQT-Q04; SIM-INT-CQ-Q02, Q05; PS-01 |
-| PP-08 | Process pain | Cư dân khó hiểu số tiền được tính ra sao và khó biết tổng thu của quỹ đóng góp. | Giả lập từ góc nhìn cư dân (không nằm trong quy trình nội bộ của Ban); cần xác thực | AI-03, AI-10 | RAW-011, RAW-012, RAW-019 | SIM-INT-CD-Q03, Q05 |
+| PP-08 | Process pain | Cư dân khó hiểu số tiền được tính ra sao và khó biết tổng thu của quỹ đóng góp. | Giả lập từ góc nhìn cư dân (không nằm trong quy trình nội bộ của Ban); cần xác thực. **To-Be chỉ giải quyết một phần:** cư dân không dùng hệ thống ở v1.0, Ban quản trị là bên xem và giải thích cách tính (WISH-24 ngoài v1.0) | AI-03, AI-10 | RAW-011, RAW-012, RAW-019 | SIM-INT-CD-Q03, Q05 |
 | PP-09 | Process pain | Biến động nhân khẩu, tạm trú, tạm vắng không được ghi nhận đều và đủ thời gian; có thể còn thông tin hộ đã chuyển đi. | Suy ra từ đề bài (biến đổi nhân khẩu, tạm vắng, tạm trú); chi tiết: giả lập | AI-11, AI-12 | RAW-005, RAW-007, RAW-008 | SIM-INT-CD-Q06; SIM-INT-CQ-Q03; PS-01 |
-| PP-10 | Concern | Lo ngại về bảo mật dữ liệu cá nhân và tài chính: dữ liệu Excel và sổ giấy không có kiểm soát truy cập. Đây là mối lo cho hệ thống mới (driver của NFR), không phải bước lỗi của quy trình hiện tại. | Suy ra (sổ giấy và Excel không có phân quyền); mức lo ngại: giả lập | — | RAW-001, RAW-022, RAW-023, RAW-024 | SIM-INT-CD-Q07; SIM-INT-BQT-Q08 |
+| PP-10 | Concern | Lo ngại về bảo mật dữ liệu cá nhân và tài chính: dữ liệu Excel và sổ giấy không có kiểm soát truy cập. Đây là mối lo cho hệ thống mới (driver của NFR), không phải bước lỗi của quy trình hiện tại. | Suy ra (sổ giấy và Excel không có phân quyền); mức lo ngại: giả lập. To-Be xử lý ở lớp NFR (NFR-001…004), không nằm trong luồng nghiệp vụ chính | — | RAW-001, RAW-022, RAW-023, RAW-024 | SIM-INT-CD-Q07; SIM-INT-BQT-Q08 |
 | PP-11 | Process pain | Tổng hợp và thống kê (tổng thu, còn thiếu, số hộ, số nhân khẩu) làm thủ công cuối kỳ, khó có số liệu tức thời. | Suy ra từ đề bài (Ban cần thống kê cơ bản để nắm hiện trạng); Phase 3 bổ sung | AI-09, AI-10 | RAW-019, RAW-020, RAW-021 | SIM-INT-BQT-Q07; SIM-INT-CQ-Q11; PS-01 |
 | PP-12 | Process pain | Nhập liệu thủ công và trùng lặp: ghi sổ trước rồi gõ lại vào Excel. | Giả lập (role-play thủ quỹ); phù hợp quy trình thủ công trong đề; Phase 3 bổ sung | AI-05 | RAW-013 | SIM-INT-TQ-Q02 |
 
@@ -123,15 +123,15 @@ Nhóm đề xuất các trạng thái thanh toán cho phase Feature (**proposed*
 
 | Step | Actor | Capability | Input | Output | Giải quyết | RAW |
 |---|---|---|---|---|---|---|
-| TB-01 Login | Ban quản trị, Thủ quỹ | CAP-01 | Tài khoản, mật khẩu | Phiên làm việc theo quyền | PP-10 | RAW-001, RAW-022, RAW-023 |
+| TB-01 Login | Quản trị hệ thống, Thành viên Ban quản trị, Thủ quỹ | CAP-01 | Tài khoản, mật khẩu | Phiên làm việc theo quyền | PP-10 | RAW-001, RAW-022, RAW-023 |
 | TB-02 Search household | Thủ quỹ | CAP-11 | Số căn hộ hoặc tên chủ hộ | Hộ cần tìm kèm thông tin chính | PP-04 | RAW-016, RAW-027 |
 | TB-03 Determine outstanding fees | Thủ quỹ | CAP-12, CAP-09 | Hộ đã chọn, kỳ thu | Danh sách khoản còn thiếu và cách tính | PP-02, PP-03 | RAW-018, RAW-011 |
 | TB-04 Record payment | Thủ quỹ | CAP-13 | Khoản, số tiền, ngày, hình thức | Giao dịch thu được lưu | PP-12, PP-01 | RAW-013 |
 | TB-05 Update payment state | Hệ thống | CAP-13 | Giao dịch vừa ghi | Trạng thái hộ-khoản cập nhật (nộp một phần, đủ) | PP-02 | RAW-013, RAW-018 |
-| TB-05a Print receipt | Thủ quỹ | CAP-14 | Giao dịch | Biên lai in hoặc xuất | PP-06 | RAW-014 |
-| TB-05b Correct / cancel | Thủ quỹ, Quản trị | CAP-15 | Giao dịch cần sửa, lý do | Giao dịch điều chỉnh, có log | PP-05 | RAW-015, RAW-025 |
-| TB-06 Search / report / statistics | Ban quản trị | CAP-16…CAP-19 | Điều kiện lọc, kỳ, thời điểm | Danh sách, tổng hợp, thống kê | PP-11, PP-02 | RAW-017, RAW-019, RAW-020, RAW-021 |
-| TB-07 Provide data to authorities | Ban quản trị | CAP-07 | Yêu cầu của cơ quan | Danh sách xuất hoặc in | PP-07 | RAW-009 |
+| TB-05a Print receipt (nhánh tùy chọn, khi hộ cần biên lai) | Thủ quỹ | CAP-14 | Giao dịch | Biên lai in hoặc xuất | PP-06 | RAW-014 |
+| TB-05b Correct / cancel (nhánh ngoại lệ, chỉ khi ghi sai) | Thủ quỹ đề nghị, Quản trị hệ thống hoặc Thành viên Ban quản trị duyệt | CAP-15 | Giao dịch cần sửa, lý do | Giao dịch điều chỉnh, có log | PP-05 | RAW-015, RAW-025 |
+| TB-06 Search / report / statistics (gồm 4 nhóm: tìm nhân khẩu CAP-16, lọc, danh sách chưa nộp, thống kê; có thể tách thành TB-06a…06d) | Thành viên Ban quản trị, Thủ quỹ | CAP-16…CAP-19 | Điều kiện lọc, kỳ, thời điểm | Danh sách, tổng hợp, thống kê | PP-11, PP-02 | RAW-017, RAW-019, RAW-020, RAW-021 |
+| TB-07 Provide data to authorities | Thành viên Ban quản trị | CAP-07 | Yêu cầu của cơ quan | Danh sách xuất hoặc in | PP-07 | RAW-009 |
 
 ### 4.3 Capability v1.0 (19 capability chức năng)
 
@@ -196,7 +196,7 @@ ROAD-01 và ROAD-02 không có màn hình, bảng dữ liệu, User Story hay ta
 
 ## 6. NFR REFINEMENT
 
-Phase 2 có **7 NFR** (RAW-022…RAW-028). Ở đây nhóm tách chúng thành **21 tiêu chí kiểm thử** (`NFR-xxx.n`), mỗi tiêu chí có chỉ tiêu và cách kiểm tra. Nội dung RAW không đổi.
+Phase 2 có **7 NFR** (RAW-022…RAW-028). Ở đây nhóm tách chúng thành **21 tiêu chí kiểm thử** (`NFR-xxx.n`), mỗi tiêu chí có chỉ tiêu và cách kiểm tra. Từ Phase 9, câu RAW-022…RAW-028 ở mức nhu cầu; phần chi tiết và con số giữ ở sheet NFR và các tiêu chí này.
 
 Cột "Mức chắc chắn" có 3 giá trị: **Fixed** (từ đề bài hoặc quy định của nhóm), **Proposed** (chỉ tiêu nhóm đề xuất, chờ xác nhận) và **TBD** (chưa có số). Phân bố: Fixed 2, Proposed 12, Proposed/TBD 4, TBD 3.
 
@@ -250,6 +250,8 @@ Phát biểu gốc (Phase 2): *Sao lưu tự động hoặc bằng một thao t�
 | NFR-005.1 | Người dùng có quyền sao lưu dữ liệu chỉ bằng một thao tác (hoặc sao lưu tự động theo lịch). | 1 thao tác; tần suất mặc định hằng ngày (proposed target) | Demo thao tác sao lưu và kiểm tra tệp sao lưu được tạo | Proposed |
 | NFR-005.2 | Sau khi khôi phục từ bản sao lưu, dữ liệu khớp với thời điểm sao lưu. | Số bản ghi các bảng chính và tổng tiền đã thu trùng khớp 100% | Ghi số liệu trước khi sao lưu, khôi phục vào cơ sở dữ liệu trống, đối chiếu lại | Proposed |
 | NFR-005.3 | Lượng dữ liệu tối đa được phép mất khi có sự cố (RPO) và thời gian khôi phục tối đa (RTO). | RPO ≤ 24 giờ (proposed target); RTO = TBD | — | Proposed / TBD |
+| NFR-005.4 | Số bản sao lưu được giữ lại và thời gian giữ. | TBD (ví dụ giữ 7 bản gần nhất, proposed) | — | TBD (OQ mới, cần xác nhận với BQT) |
+| NFR-005.5 | Quyền thực hiện sao lưu và khôi phục. | Chỉ vai Quản trị hệ thống được khôi phục (proposed); sao lưu do Quản trị hệ thống hoặc theo lịch | Kiểm thử theo ma trận quyền NFR-002 | Proposed |
 
 ### NFR-006 — Hiệu năng (RAW-027)
 
@@ -280,32 +282,32 @@ Phát biểu gốc (Phase 2): *Giao diện tiếng Việt, tiền VND dễ đọ
 |---|---|---|---|---|
 | RAW-001 | FR | Hệ thống cho phép Ban quản trị đăng nhập bằng tài khoản được cấp sẵn (tên đăng nhập, mậ… | PP-10 | CAP-01 |
 | RAW-002 | FR | Người dùng tự đổi mật khẩu của mình và xem, cập nhật thông tin cá nhân của tài khoản. | — (gap) | CAP-02 |
-| RAW-003 | FR | Cho phép thêm hộ gia đình mới gồm số căn hộ, chủ hộ, diện tích căn hộ (m²), thông tin l… | PP-07 | CAP-03 |
+| RAW-003 | FR | BQT muốn lưu thông tin hộ gia đình tập trung và tránh trường hợp nhập trùng căn hộ. | PP-07 | CAP-03 |
 | RAW-004 | FR | Cho phép xem chi tiết và sửa thông tin hộ gia đình (diện tích, chủ hộ, liên hệ), kèm da… | PP-03 | CAP-03 |
 | RAW-005 | FR | Cho phép ghi nhận đổi chủ hộ hoặc hộ chuyển đi / ngừng cư trú mà vẫn lưu lịch sử, không… | PP-09 | CAP-04 |
-| RAW-006 | FR | Cho phép thêm, sửa nhân khẩu trong hộ: họ tên, ngày sinh, giới tính, quan hệ với chủ hộ… | PP-07 | CAP-05 |
-| RAW-007 | FR | Ghi nhận biến động nhân khẩu (chuyển đến, chuyển đi, sinh, mất…) kèm ngày và lý do; xem… | PP-09 | CAP-06 |
-| RAW-008 | FR | Ghi nhận tạm trú và tạm vắng của nhân khẩu với thời gian bắt đầu, kết thúc và lý do; đá… | PP-09 | CAP-06 |
+| RAW-006 | FR | BQT muốn quản lý thông tin những người thuộc từng hộ và vẫn tra cứu được người đã rời đi. | PP-07 | CAP-05 |
+| RAW-007 | FR | BQT muốn theo dõi các thay đổi nhân khẩu của từng hộ theo thời gian. | PP-09 | CAP-06 |
+| RAW-008 | FR | BQT muốn theo dõi tình trạng tạm trú/tạm vắng và thời hạn liên quan. | PP-09 | CAP-06 |
 | RAW-009 | FR | Cho phép xuất hoặc in danh sách hộ gia đình, nhân khẩu và biến động để Ban cung cấp cho… | PP-07 | CAP-07 |
-| RAW-010 | FR | Cho phép tạo, xem, sửa, ngừng áp dụng khoản thu (phí dịch vụ, phí quản lý, khoản đóng g… | — (gap) | CAP-08 |
-| RAW-011 | FR | Hệ thống lập danh sách khoản phải thu của từng hộ theo kỳ và tự tính phí dịch vụ, phí q… | PP-03, PP-08 | CAP-09 |
+| RAW-010 | FR | BQT muốn tự quản lý các khoản thu và có thể thay đổi mức thu khi cần. | — (gap) | CAP-08 |
+| RAW-011 | FR | BQT muốn hệ thống hỗ trợ tính phí theo diện tích căn hộ để giảm tính toán thủ công. | PP-03, PP-08 | CAP-09 |
 | RAW-012 | FR | Hỗ trợ khoản đóng góp tự nguyện theo đợt: hộ tự nguyện số tiền, không bắt buộc; hộ chưa… | PP-08 | CAP-10 |
-| RAW-013 | FR | Cho phép ghi nhận hộ nộp tiền: chọn hộ, khoản thu, số tiền, ngày nộp, hình thức nộp, ng… | PP-01, PP-02, PP-12 | CAP-13 |
+| RAW-013 | FR | Thủ quỹ muốn ghi nhận việc hộ nộp tiền, kể cả khi chỉ nộp một phần hoặc nhiều khoản cùng lúc. | PP-01, PP-02, PP-12 | CAP-13 |
 | RAW-014 | FR | Cho phép in hoặc xuất biên lai (phiếu thu) cho từng lần nộp gồm số căn hộ, khoản, kỳ, s… | PP-06 | CAP-14 |
-| RAW-015 | FR | Cho phép sửa hoặc hủy giao dịch thu nhầm kèm lý do; không xóa cứng, lưu người thực hiện… | PP-05 | CAP-15 |
-| RAW-016 | FR | Tìm hộ gia đình theo số căn hộ và tên chủ hộ; kết quả hiển thị nhanh kèm số tiền phải nộp. | PP-04 | CAP-11 |
+| RAW-015 | FR | Thủ quỹ muốn xử lý được giao dịch thu ghi nhầm; phần truy vết thay đổi nằm ở RAW-025 và NFR-004. | PP-05 | CAP-15 |
+| RAW-016 | FR | Thủ quỹ và BQT muốn tìm hộ gia đình theo số căn hộ và tên chủ hộ, kèm số tiền phải nộp; yêu cầu tốc độ nằm ở NFR-006. | PP-04 | CAP-11 |
 | RAW-017 | FR | Tìm nhân khẩu theo họ tên (và thông tin cơ bản) trên toàn bộ các hộ. | PP-04, PP-07 | CAP-16 |
-| RAW-018 | FR | Tra cứu, lọc khoản thu và giao dịch theo hộ, khoản thu, kỳ, trạng thái nộp (đã nộp, còn… | PP-01, PP-02 | CAP-12 |
+| RAW-018 | FR | BQT và Thủ quỹ muốn tra cứu khoản thu và lịch sử đóng tiền của từng hộ theo nhiều tiêu chí. | PP-01, PP-02 | CAP-12 |
 | RAW-019 | FR | Thống kê tổng số tiền đã thu và còn phải thu theo khoản thu, theo tháng hoặc đợt; thống… | PP-08, PP-11 | CAP-18 |
 | RAW-020 | FR | Lập danh sách hộ chưa nộp hoặc còn nợ theo kỳ (đối với khoản bắt buộc) để Ban nhắc nộp. | PP-02, PP-11 | CAP-17 |
 | RAW-021 | FR | Thống kê số hộ, số nhân khẩu, số người tạm trú, tạm vắng tại một thời điểm, ghi rõ ngày… | PP-11 | CAP-19 |
-| RAW-022 | NFR | Xác thực an toàn: mật khẩu không lưu ở dạng rõ (băm), giới hạn số lần đăng nhập sai liê… | PP-10 | CAP-01 |
-| RAW-023 | NFR | Phân quyền theo vai trò: tối thiểu phân biệt quản trị và người thu phí; chỉ quản trị đư… | PP-10 | NFR-002 (NFR) |
-| RAW-024 | NFR | Bảo vệ dữ liệu cá nhân: che bớt số giấy tờ khi hiển thị thường ngày; chỉ tài khoản có q… | PP-10 | NFR-003 (NFR) |
-| RAW-025 | NFR | Audit log: ghi người thực hiện, thời điểm, loại thao tác, giá trị trước và sau cho việc… | PP-05 | NFR-004 (NFR) |
-| RAW-026 | NFR | Sao lưu và khôi phục dữ liệu: sao lưu tự động hoặc bằng một thao tác, có thể khôi phục … | — (gap) | NFR-005 (NFR) |
-| RAW-027 | NFR | Hiệu năng: tìm kiếm và hiển thị danh sách trong tối đa 3 giây với quy mô vài trăm hộ, v… | PP-04 | NFR-006 (NFR) |
-| RAW-028 | NFR | Dễ dùng: giao diện tiếng Việt, tiền tệ VND hiển thị dễ đọc, thông báo lỗi rõ ràng; ghi … | — (gap) | NFR-007 (NFR) |
+| RAW-022 | NFR | BQT muốn tài khoản được bảo vệ an toàn và hạn chế truy cập trái phép. | PP-10 | CAP-01 |
+| RAW-023 | NFR | Mỗi loại người dùng chỉ được thực hiện công việc phù hợp với trách nhiệm của mình. | PP-10 | NFR-002 (NFR) |
+| RAW-024 | NFR | Thông tin cá nhân nhạy cảm chỉ được người có thẩm quyền xem. | PP-10 | NFR-003 (NFR) |
+| RAW-025 | NFR | BQT muốn biết ai đã thay đổi dữ liệu quan trọng và thay đổi khi nào. | PP-05 | NFR-004 (NFR) |
+| RAW-026 | NFR | BQT lo mất dữ liệu và muốn có cách sao lưu, khôi phục khi có sự cố. | — (gap) | NFR-005 (NFR) |
+| RAW-027 | NFR | Thủ quỹ muốn việc tìm kiếm và mở danh sách không bị chậm khi dữ liệu tăng. | PP-04 | NFR-006 (NFR) |
+| RAW-028 | NFR | Người dùng muốn giao diện tiếng Việt, dễ hiểu và thao tác thu phí đơn giản. | — (gap) | NFR-007 (NFR) |
 | RAW-029 | FR | [Roadmap v2.0] Quản lý phí gửi xe: thu theo tháng theo thông tin phương tiện đăng ký củ… | — (roadmap) | ROAD-01 (roadmap v2.0) |
 | RAW-030 | FR | [Roadmap v2.0] Quản lý các khoản thu hộ điện, nước, internet theo thông báo của nhà cun… | — (roadmap) | ROAD-02 (roadmap v2.0) |
 
