@@ -99,4 +99,4 @@ Khi PO quyết định, nhóm sẽ cập nhật 05/06 và GitHub rồi ghi vào 
 
 - Số liệu trong NFR (3 giây, quy mô dữ liệu, số lần đăng nhập sai, tần suất và số bản sao lưu) vẫn là giả định, cần stakeholder xác nhận.
 - Hai kịch bản SIM-OBS-01 và SIM-SURVEY-01 chưa thực hiện; nếu thực hiện thì mới có bằng chứng thật.
-- GitHub Assignee: 77/150 task đã gán; 73 task của Châu Tuấn, Đức Quang, Tiến Thành còn chờ (xem `docs/05_GitHub_Project_Setup.md`).
+- GitHub Assignee: đã gán đủ 150/150 task.
