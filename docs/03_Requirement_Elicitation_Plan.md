@@ -43,7 +43,7 @@ Mỗi stakeholder là một **vai trò**, không gắn với người cụ thể
 
 | Mã | Nguồn | Mô tả | Cách dùng |
 |---|---|---|---|
-| PS-01 | Đề bài BlueMoon — "Giới thiệu bài toán" (`08. Bo Bai Tap.pdf`) | Bối cảnh, các khoản phí, phạm vi v1.0 và v2.0, luồng nghiệp vụ | Nguồn gốc (ground truth) của phạm vi |
+| PS-01 | Đề bài BlueMoon — "Giới thiệu bài toán" (`references/08. Bo Bai Tap.pdf`) | Bối cảnh, các khoản phí, phạm vi v1.0 và v2.0, luồng nghiệp vụ | Nguồn gốc (ground truth) của phạm vi |
 | PS-02 | Bộ bài tập — ví dụ Project Charter ở Bài 4.1 (Chương 4, **ngoài phạm vi đối chiếu BTL**) | Mục đích, mục tiêu đo được, phạm vi sản phẩm, loại trừ nhập liệu | Chỉ tham khảo bối cảnh; các giả định rút ra từ đây là TEAM DECISION, không phải yêu cầu của giảng viên |
 | GD-01 | `01_ Huong dan … (Elicitation).pdf` | Quy trình Elicitation, artefact, chỉ tiêu | Khung phương pháp |
 | DA-01 | Mẫu sổ quản lý thu các khoản đóng góp (Hình 1-1 trong đề) | Minh họa thu chi thủ công | Tham chiếu để suy luận cột dữ liệu; nhóm chưa dùng nội dung chi tiết của hình để tạo yêu cầu |
