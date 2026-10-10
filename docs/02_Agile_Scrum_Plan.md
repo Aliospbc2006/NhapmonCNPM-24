@@ -2,14 +2,14 @@
 
 | Mục | Giá trị |
 |---|---|
-| Phiên bản tài liệu | 0.1 (Phase 1 — bản nháp, chờ nhóm xác nhận) |
+| Phiên bản tài liệu | 0.1 (bản nháp, chờ nhóm xác nhận) |
 | Cập nhật | 2026-10-03 |
 | Nhóm | Nhóm 24 — 6 thành viên |
 | Liên quan | [01_Project_Overview.md](01_Project_Overview.md) |
 
 > **Ghi chú.**
 > - Đề bài và hướng dẫn BTL không nói ai giữ vai trò nào. **Cách phân vai ở mục 1 là đề xuất**, cả nhóm cần xác nhận.
-> - "Product Owner" trong nhóm chỉ đại diện cho Ban quản trị trong phạm vi BTL, không phải khách hàng thật. Các ý kiến "của Ban quản trị" trong tài liệu vẫn là *Simulated stakeholder input*.
+> - "Product Owner" trong nhóm chỉ đại diện cho Ban quản trị trong phạm vi BTL, không phải khách hàng thật. Các ý kiến "của Ban quản trị" trong tài liệu vẫn là thông tin stakeholder theo kịch bản.
 > - Product Backlog và Sprint Plan ở `deliverables/06_Product_Backlog_Sprint_Plan.xlsx`. Cách dựng bảng GitHub Project ở `docs/05_GitHub_Project_Setup.md`.
 
 ---
@@ -90,7 +90,7 @@ Nhịp làm việc (đề xuất, xem SQ-02):
 2. **Chỉ định reviewer:** reviewer là **một thành viên khác** với assignee. Với code, tối thiểu 1 reviewer là Dev.
 3. **Thời hạn:** reviewer phản hồi trong 1 ngày làm việc. Quá hạn thì nhắc trong kênh nhóm; SM điều phối nếu bị kẹt.
 4. **Nội dung review:**
-   - Tài liệu: đúng phạm vi v1.0/v2.0, đúng ID, giữ truy vết (RAW → Epic → Feature → User Story → AC), dữ liệu giả lập có ghi rõ.
+   - Tài liệu: đúng phạm vi v1.0/v2.0, đúng ID, giữ truy vết (RAW → Epic → Feature → User Story → AC), nguồn dữ liệu stakeholder được ghi rõ.
    - Code (khi có): chạy được, đúng Acceptance Criteria, dễ đọc, không lộ thông tin nhạy cảm.
 5. **Kết quả:** *Approve* → task sang Done. *Request changes* → task về Todo kèm nhận xét cụ thể.
 6. **Chấp nhận User Story:** sau khi các task của User Story xong, PO kiểm tra theo Acceptance Criteria rồi mới đóng User Story.
@@ -108,7 +108,7 @@ Bản sơ bộ, sẽ tinh chỉnh khi có Product Backlog và bắt đầu code.
 
 **Với tài liệu:**
 - [ ] ID thống nhất (RAW-001…, NFR-001…, EPIC-01…, FEAT-01…, US-01…, AC-US01-01…) và có truy vết.
-- [ ] Nội dung stakeholder, wish list, yêu cầu giả lập ghi rõ là *Simulated stakeholder input* / *Yêu cầu giả lập từ bối cảnh bài toán*.
+- [ ] Nội dung stakeholder, wish list, yêu cầu ghi rõ nguồn là kịch bản role-play (docs/03).
 - [ ] Không có biên bản, chữ ký, ngày phỏng vấn, ghi âm hay ảnh khảo sát giả.
 - [ ] Không mâu thuẫn với [01_Project_Overview.md](01_Project_Overview.md); đã chính tả.
 
@@ -129,7 +129,7 @@ Bản sơ bộ, sẽ tinh chỉnh khi có Product Backlog và bắt đầu code.
 
 ## 7. Quy tắc Git/GitHub (mức đơn giản)
 
-> Repository GitHub của nhóm: https://github.com/Aliospbc2006/NhapmonCNPM-24. Các thay đổi sau review (Phase 9) nằm trên nhánh `fix/team-review-feedback`, chưa merge vào `main` (xem `docs/06_Team_Review_Response.md`).
+> Repository GitHub của nhóm: https://github.com/Aliospbc2006/NhapmonCNPM-24. Việc xử lý review của thành viên ghi ở `docs/06_Team_Review_Response.md`.
 
 1. **Một repository chung**, nhánh chính là `main`. **Không push trực tiếp lên `main`.**
 2. **Nhánh làm việc** đặt tên theo mẫu:
@@ -172,14 +172,14 @@ Bản sơ bộ, sẽ tinh chỉnh khi có Product Backlog và bắt đầu code.
 
 ## 9. Lựa chọn mô hình quy trình (Bài 2.3, Bước 1)
 
-Nhóm trả lời các câu hỏi gợi ý của Bài 2.3 trước khi chọn mô hình. Nguồn: phần "Giới thiệu bài toán" [Đề bài] hoặc suy luận của nhóm [Giả lập].
+Nhóm trả lời các câu hỏi gợi ý của Bài 2.3 trước khi chọn mô hình. Nguồn: phần "Giới thiệu bài toán" [Đề bài] hoặc suy luận của nhóm.
 
 | # | Câu hỏi | Trả lời |
 |---|---|---|
 | 1 | Phần mềm mới hay không? | Mới. Thay việc thu phí thủ công bằng Excel và sổ giấy bằng một ứng dụng [Đề bài]. |
 | 2 | Phạm vi áp dụng? | Phần mềm nội bộ cho Ban quản trị chung cư BlueMoon, thay đổi cách quản lý thu phí và thông tin hộ dân cư [Đề bài]. |
 | 3 | Vai trò của các bên liên quan? | Ban quản trị là khách hàng và người dùng chính; cư dân, cơ quan chức năng là stakeholder gián tiếp (`01_Project_Overview.md`, mục 6). |
-| 4 | Quy trình nghiệp vụ đã rõ chưa? | Tương đối rõ (thu phí, hộ gia đình, nhân khẩu) nhưng còn nhiều câu hỏi mở cần làm rõ dần (OQ-xx trong `04_Interview_Report.md`) [Giả lập]. |
+| 4 | Quy trình nghiệp vụ đã rõ chưa? | Tương đối rõ (thu phí, hộ gia đình, nhân khẩu) nhưng còn nhiều câu hỏi mở cần làm rõ dần (OQ-xx trong `04_Interview_Report.md`). |
 | 5 | Kích thước phần mềm? | Nhỏ: v1.0 có 7 nhóm chức năng, 41 User Story, 143 Story Point (file 06). |
 | 6 | Đội ngũ cần bao nhiêu người? | 6 thành viên (1 PO, 1 SM, 4 Developer), xem mục 1. |
 
@@ -207,15 +207,15 @@ Kế hoạch theo thứ tự công đoạn, **chưa có ngày cụ thể** vì n
 
 | Công đoạn | Nội dung | Sản phẩm |
 |---|---|---|
-| Phase 1 | Project Overview, kế hoạch Agile/Scrum | `01_Project_Overview.md`, `02_Agile_Scrum_Plan.md` |
-| Phase 2 | Kế hoạch khai phá yêu cầu, Client's Wish List, Raw Requirement | `03_Requirement_Elicitation_Plan.md`, `04_Interview_Report.md`, `04_Raw_Requirements.xlsx` |
-| Phase 3 | As-Is, Pain Point, To-Be (Visionary), NFR | `04_AsIs_ToBe.md` |
-| Phase 4 | Epic, Feature, User Story, Acceptance Criteria | `05_Epic_UserStory.xlsx` |
-| Phase 5 | Product Backlog (thứ tự, MoSCoW, Story Point) | `06_Product_Backlog_Sprint_Plan.xlsx` |
-| Phase 6 | Sprint Planning: Sprint 1, 2, 3 và Sprint Backlog | `06_Product_Backlog_Sprint_Plan.xlsx` |
-| Phase 7 | Rà soát cuối, chuẩn bị GitHub Project | `05_GitHub_Project_Setup.md`, `FINAL_DELIVERABLES.md` |
-| Phase 8 | Tạo GitHub Project, Issue User Story và task | `05_GitHub_Project_Setup.md` |
-| Phase 9 | Xác thực và xử lý review của thành viên | `06_Team_Review_Response.md` |
+| Giai đoạn 1 | Project Overview, kế hoạch Agile/Scrum | `01_Project_Overview.md`, `02_Agile_Scrum_Plan.md` |
+| Giai đoạn 2 | Kế hoạch khai phá yêu cầu, Client's Wish List, Raw Requirement | `03_Requirement_Elicitation_Plan.md`, `04_Interview_Report.md`, `04_Raw_Requirements.xlsx` |
+| Giai đoạn 3 | As-Is, Pain Point, To-Be (Visionary), NFR | `04_AsIs_ToBe.md` |
+| Giai đoạn 4 | Epic, Feature, User Story, Acceptance Criteria | `05_Epic_UserStory.xlsx` |
+| Giai đoạn 5 | Product Backlog (thứ tự, MoSCoW, Story Point) | `06_Product_Backlog_Sprint_Plan.xlsx` |
+| Giai đoạn 6 | Sprint Planning: Sprint 1, 2, 3 và Sprint Backlog | `06_Product_Backlog_Sprint_Plan.xlsx` |
+| Giai đoạn 7 | Rà soát cuối, chuẩn bị GitHub Project | `05_GitHub_Project_Setup.md`, `FINAL_DELIVERABLES.md` |
+| Giai đoạn 8 | Tạo GitHub Project, Issue User Story và task | `05_GitHub_Project_Setup.md` |
+| Giai đoạn 9 | Xác thực và xử lý review của thành viên | `06_Team_Review_Response.md` |
 | Sprint 1 → 3 | Thực hiện theo Sprint Backlog (khi bắt đầu giai đoạn code) | Xem sheet Sprint_1, Sprint_2, Sprint_3 |
 
 ## Câu hỏi mở (liên quan Scrum)

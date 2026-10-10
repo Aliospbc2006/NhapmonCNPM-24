@@ -2,7 +2,7 @@
 
 | Mục | Giá trị |
 |---|---|
-| Phiên bản tài liệu | 0.1 (Phase 1 — bản nháp, chờ nhóm xác nhận) |
+| Phiên bản tài liệu | 0.1 (bản nháp, chờ nhóm xác nhận) |
 | Cập nhật | 2026-10-03 |
 | Nhóm thực hiện | Nhóm 24 — Châu Tuấn, Thanh Tuấn, Thành Nam, Đức Quang, Mạnh Trường, Tiến Thành |
 | Đơn vị thực hiện | Nhóm 24, bài tập lớn môn Nhập môn Công nghệ phần mềm (IT4080) |
@@ -11,7 +11,7 @@
 
 > **Về nguồn dữ liệu.** Nhóm **chưa** phỏng vấn, khảo sát hay quan sát thực tế Ban quản trị, cư dân hoặc bên liên quan nào. Nội dung về stakeholder, nhu cầu và pain point trong tài liệu này có hai nguồn:
 > - **[Đề bài]**: trích hoặc diễn giải lại từ đề bài BlueMoon.
-> - **[Giả lập]**: *Simulated stakeholder input* (*yêu cầu giả lập từ bối cảnh bài toán*), nhóm suy ra từ nghiệp vụ. Đây không phải kết quả làm việc với người thật.
+> - **[Kịch bản]**: thông tin stakeholder do nhóm xây dựng theo kịch bản role-play, suy ra từ nghiệp vụ (phương pháp ở `docs/03`).
 >
 > Tên các nhân vật (ông Nguyễn Văn C, bà Phạm Thị A, ông Lê Văn B) lấy từ ví dụ Project Charter ở Bài 4.1 (Chương 4) của bộ bài tập. Nhóm chưa gặp ai trong số này. BTL chỉ đối chiếu phần giới thiệu bài toán, Chương 2 và Chương 3, nên các chi tiết lấy từ ví dụ Charter chỉ là bối cảnh tham khảo, nhóm tạm giả định (TEAM DECISION). Đó không phải yêu cầu của giảng viên.
 
@@ -42,9 +42,9 @@ Các loại khoản thu thuộc phạm vi v1.0 [Đề bài]:
 
 **[Đề bài]** Ban quản trị quản lý thu phí theo phương thức thủ công, có dùng Excel và sổ thu chi giấy, nhưng "hiệu quả quản lý chưa cao". Thông tin hộ khẩu, nhân khẩu cũng cần được quản lý để cung cấp cho cơ quan chức năng khi được yêu cầu.
 
-**[Giả lập]** Các pain point sau là suy luận hợp lý để phục vụ bước Requirement Elicitation. Chúng chưa được kiểm chứng với người dùng thật:
+Các pain point sau là suy luận hợp lý để phục vụ bước Requirement Elicitation. Chúng chưa được kiểm chứng với người dùng thật:
 
-| # | Vấn đề (giả lập) | Hệ quả |
+| # | Vấn đề | Hệ quả |
 |---|---|---|
 | 1 | Dữ liệu thu phí nằm rải rác trong Excel và sổ giấy | Khó biết hộ nào đã nộp, hộ nào còn nợ |
 | 2 | Phí tính tay theo diện tích × đơn giá | Dễ sai sót, khó đối chiếu |
@@ -59,7 +59,7 @@ Mục tiêu chính, lấy theo ví dụ Charter ở Bài 4.1 (Chương 4) [Ví d
 - Quản lý được **100% các loại phí cần thu** trong phạm vi v1.0.
 - Quản lý được **100% thông tin hộ gia đình** sống tại chung cư, cùng các **biến động nhân khẩu** của từng căn hộ.
 
-Mục tiêu cụ thể cho v1.0 [Giả lập, suy ra từ đề bài]:
+Mục tiêu cụ thể cho v1.0 (suy ra từ đề bài):
 - Thay ghi chép thủ công bằng một ứng dụng có dữ liệu tập trung.
 - Làm đúng luồng nghiệp vụ: **Tạo khoản thu → Thu phí → Thống kê các khoản đóng góp**.
 - Tìm nhanh thông tin hộ, nhân khẩu, khoản thu và tình trạng nộp.
@@ -89,7 +89,7 @@ Lưu ý:
 | Nhóm phát triển (Nhóm 24) | Thực hiện dự án | Giao đúng phạm vi, đúng chất lượng | Xây dựng hệ thống | — |
 | Giảng viên | Hướng dẫn và đánh giá BTL | Tuân thủ quy trình Elicitation và Agile/Scrum | Gián tiếp | — |
 
-> Mọi "mong muốn" gán cho các stakeholder trong các tài liệu sau là **Simulated stakeholder input**.
+> Mọi "mong muốn" gán cho các stakeholder trong các tài liệu sau là thông tin stakeholder theo kịch bản.
 
 ## 7. Phạm vi v1.0
 
@@ -142,7 +142,7 @@ Bốn hạng mục này không có màn hình, bảng dữ liệu, User Story ha
 | AS-04 | Người dùng v1.0 đều thuộc Ban quản trị và có ba vai trò: **Quản trị hệ thống** (tạo và vô hiệu hóa tài khoản, phân quyền, sao lưu), **Thành viên Ban quản trị** (quản lý hộ, nhân khẩu, khoản thu, xem thống kê) và **Thủ quỹ** (ghi nhận thu phí, tra cứu, in biên lai; không sửa hộ, nhân khẩu, khoản thu, đơn giá, tài khoản). Ma trận quyền chi tiết do US-05 và NFR-002 xác định. | Đề bài chưa quy định; nhóm chốt sau review của thành viên (Bài 6.1 làm tham khảo); cần xác thực với khách hàng thật (Q3) |
 | AS-05 | Phí dịch vụ và phí quản lý được tính theo diện tích căn hộ × đơn giá do Ban quản trị thiết lập. Hệ thống không cố định mức giá. | Đề bài chỉ nêu khoảng giá |
 | AS-06 | Khoản đóng góp tự nguyện thu theo đợt và số tiền do hộ tự nguyện; hệ thống chỉ ghi nhận, không ép buộc. | Đề bài |
-| AS-07 | v1.0 hỗ trợ lập danh sách khoản phải thu theo hộ; việc gửi thông báo thu tiền (in, giao tận nơi, …) Ban quản trị thực hiện ngoài hệ thống. | Giả lập, cần xác nhận (Q2) |
+| AS-07 | v1.0 hỗ trợ lập danh sách khoản phải thu theo hộ; việc gửi thông báo thu tiền (in, giao tận nơi, …) Ban quản trị thực hiện ngoài hệ thống. | Giả định, cần xác nhận (Q2) |
 | AS-08 | Dữ liệu đầu vào (hộ, nhân khẩu, loại phí) do Ban quản trị nhập; nhóm không nhập liệu hộ. | Giả định của nhóm; tham khảo ví dụ Charter Bài 4.1 (Chương 4) |
 | AS-09 | Hệ thống phục vụ một chung cư (BlueMoon), một đơn vị tiền tệ (VND). | Đề bài |
 | AS-10 | Dữ liệu nhân khẩu là dữ liệu cá nhân nhạy cảm. Khi demo, kiểm thử hay đưa lên GitHub chỉ dùng dữ liệu mẫu giả, không dùng dữ liệu thật. | Suy luận hợp lý |
@@ -156,11 +156,11 @@ Bốn hạng mục này không có màn hình, bảng dữ liệu, User Story ha
 | Môi trường | Bộ cài chạy trên máy tính cá nhân dùng Windows | Giả định của nhóm; tham khảo ví dụ Charter Bài 4.1 (Chương 4) |
 | Truy cập | Chức năng quản lý chỉ truy cập được sau khi đăng nhập thành công | Đề bài |
 | Quy trình | Áp dụng Agile/Scrum; truy vết RAW → Epic → Feature → User Story → Acceptance Criteria | Hướng dẫn BTL |
-| Tài liệu | Các nội dung stakeholder phải ghi rõ là giả lập; không tạo bằng chứng giả (biên bản, chữ ký, ngày phỏng vấn, ghi âm, ảnh khảo sát) | Quy định của nhóm |
+| Tài liệu | Nội dung stakeholder phải ghi rõ là xây dựng theo kịch bản; không tạo bằng chứng giả (biên bản, chữ ký, ngày phỏng vấn, ghi âm, ảnh khảo sát) | Quy định của nhóm |
 | Giai đoạn hiện tại | Chỉ làm tài liệu BTL (Elicitation, Agile/Scrum theo Chương 2–3); chưa viết code ứng dụng | Quy định của nhóm |
 | Ngân sách, lịch tham khảo | Ví dụ Charter của đề: ngân sách 100.000.000 đồng, thực hiện trong Q4/2023, không quá 4 tháng. Đây là ví dụ minh họa, **chưa** phải ràng buộc chính thức của nhóm | Ví dụ Charter Bài 4.1 (Chương 4), chỉ tham khảo |
 
-## Câu hỏi mở (liên quan Phase 1)
+## Câu hỏi mở (liên quan tổng quan dự án)
 
 | ID | Câu hỏi | Ảnh hưởng |
 |---|---|---|

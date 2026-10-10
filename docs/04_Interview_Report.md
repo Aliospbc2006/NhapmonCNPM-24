@@ -2,8 +2,8 @@
 
 | Mục | Giá trị |
 |---|---|
-| Phiên bản tài liệu | 0.1 (Phase 2 — bản nháp, chờ nhóm xác nhận) |
-| Loại | Simulated Interview / Role-play for Requirement Elicitation |
+| Phiên bản tài liệu | 0.1 (bản nháp, chờ nhóm xác nhận) |
+| Loại | Phỏng vấn theo kịch bản (role-play) phục vụ Requirement Elicitation |
 | Đầu vào | [03_Requirement_Elicitation_Plan.md](03_Requirement_Elicitation_Plan.md), 4 biên bản trong `docs/interviews/` |
 | Đầu ra liên quan | `deliverables/04_Raw_Requirements.xlsx` (sheet Client_Wish_List, Raw_Requirements, NFR, Interview_Summary) |
 
@@ -11,11 +11,11 @@
 
 ## 1. Phương pháp thực hiện
 
-Nhóm làm **role-play stakeholder interview** dựa trên đề bài BlueMoon và tài liệu hướng dẫn Elicitation. Một thành viên đóng vai Analyst, tự viết câu trả lời của bốn nhóm stakeholder giả lập theo Interview Script gồm 8 phần: Introduction, Current process / As-Is, Pain Points, Wishlist, Vision / To-Be, NFR / Constraints, Priority, Closing.
+Nhóm làm **role-play stakeholder interview** dựa trên đề bài BlueMoon và tài liệu hướng dẫn Elicitation. Một thành viên đóng vai Analyst, tự viết câu trả lời của bốn nhóm stakeholder theo kịch bản theo Interview Script gồm 8 phần: Introduction, Current process / As-Is, Pain Points, Wishlist, Vision / To-Be, NFR / Constraints, Priority, Closing.
 
 Nhóm dùng ba kỹ thuật: semi-structured interview (role-play), document analysis (đề bài, biểu mẫu Excel giả định) và workflow analysis (quy trình As-Is giả định).
 
-| Biên bản | Stakeholder giả lập | Số câu hỏi |
+| Biên bản | Stakeholder theo kịch bản | Số câu hỏi |
 |---|---|---|
 | [SIM-INT-BQT](interviews/01_Ban_Quan_Tri_Interview.md) | Đại diện Ban quản trị (cấp quyết định) | 12 |
 | [SIM-INT-TQ](interviews/02_Thu_Quy_Interview.md) | Thủ quỹ / người thu phí | 12 |
@@ -26,14 +26,14 @@ Nhóm dùng ba kỹ thuật: semi-structured interview (role-play), document ana
 ## 2. Ghi chú: đây chỉ là role-play cho môn học
 
 - Nhóm **không** phỏng vấn, khảo sát hay quan sát thực tế Ban quản trị, thủ quỹ, cư dân hoặc cơ quan chức năng.
-- Mọi phát hiện, mong muốn và yêu cầu trong báo cáo này là **Simulated stakeholder input** (*yêu cầu giả lập từ bối cảnh bài toán*).
+- Mọi phát hiện, mong muốn và yêu cầu trong báo cáo này là thông tin stakeholder theo kịch bản.
 - Không có tên thật, chữ ký, ghi âm, ảnh chụp, số điện thoại, địa chỉ, ngày hay giờ họp.
-- **Evidence Reference** chỉ trỏ tới mã câu hỏi giả lập (`SIM-INT-…`), đề bài (PS-01, PS-02) hoặc document analysis (DA-02, biểu mẫu giả định). Đó không phải bằng chứng từ người thật.
+- **Evidence Reference** chỉ trỏ tới mã câu hỏi kịch bản (`SIM-INT-…`), đề bài (PS-01, PS-02) hoặc document analysis (DA-02, biểu mẫu giả định). Đó không phải bằng chứng từ người thật.
 - Nếu dùng ngoài môn học, yêu cầu phải được xác thực với khách hàng thật (xem mục 9 và 11).
 
 ## 3. Stakeholder groups
 
-| Mã | Stakeholder giả lập | Quan hệ với hệ thống v1.0 | Biên bản |
+| Mã | Stakeholder theo kịch bản | Quan hệ với hệ thống v1.0 | Biên bản |
 |---|---|---|---|
 | BQT | Đại diện Ban quản trị (cấp quyết định) | Người dùng (quản trị) | [SIM-INT-BQT](interviews/01_Ban_Quan_Tri_Interview.md) |
 | TQ | Thủ quỹ / người thu phí | Người dùng trực tiếp | [SIM-INT-TQ](interviews/02_Thu_Quy_Interview.md) |
@@ -61,7 +61,7 @@ Nhóm dùng ba kỹ thuật: semi-structured interview (role-play), document ana
 
 ## 5. Pain Points
 
-| ID | Pain point (giả lập) | Nguồn (simulated interview) | RAW liên quan |
+| ID | Pain point | Nguồn (phỏng vấn kịch bản) | RAW liên quan |
 |---|---|---|---|
 | PP-01 | Dữ liệu thu phí ghi ở hai nơi (sổ giấy và Excel), hai bên không khớp. | SIM-INT-BQT-Q02, Q03 | RAW-013, RAW-018 |
 | PP-02 | Muốn biết hộ nào đã nộp hoặc còn thiếu phải lọc Excel và đối chiếu sổ; cuối tháng cư dân hỏi lại phải lục. | SIM-INT-BQT-Q03; SIM-INT-TQ-Q09 | RAW-018, RAW-020 |
@@ -76,7 +76,7 @@ Nhóm dùng ba kỹ thuật: semi-structured interview (role-play), document ana
 
 ## 6. Client Wishes
 
-Danh sách mong muốn thô, **30 wish** (26 thuộc v1.0, 2 roadmap v2.0, 2 ngoài v1.0). Chưa lọc, chưa ưu tiên chính thức. Đây là *Simulated stakeholder input*.
+Danh sách mong muốn thô, **30 wish** (26 thuộc v1.0, 2 roadmap v2.0, 2 ngoài v1.0). Chưa lọc, chưa ưu tiên chính thức. Đây là thông tin stakeholder theo kịch bản.
 
 | Wish ID | Stakeholder | Statement | Source interview | Related RAW | Scope | Notes |
 |---|---|---|---|---|---|---|
@@ -175,12 +175,12 @@ Bao phủ phạm vi v1.0:
 
 | ID | Câu hỏi | Liên quan | Phát sinh từ |
 |---|---|---|---|
-| OQ-01 | v1.0 có cần chức năng tự đăng ký tài khoản không? (Ban nói tài khoản do Ban cấp.) | RAW-001 | BQT-Q08; Q1 Phase 1 |
+| OQ-01 | v1.0 có cần chức năng tự đăng ký tài khoản không? (Ban nói tài khoản do Ban cấp.) | RAW-001 | BQT-Q08; Q1 trong tổng quan dự án |
 | OQ-02 | Có chính sách miễn/giảm phí cho hộ đặc biệt không, và có thuộc v1.0 không? | RAW-011 | TQ-Q10; BQT-Q06 |
 | OQ-03 | Kiot tầng 1 và penthouse có đơn giá hoặc cách tính khác không? | RAW-010, RAW-011 | BQT-Q06 |
-| OQ-04 | Phân quyền: có những vai trò nào, mỗi vai trò làm được gì? | RAW-023 | BQT-Q08; Q3 Phase 1 |
+| OQ-04 | Phân quyền: có những vai trò nào, mỗi vai trò làm được gì? | RAW-023 | BQT-Q08; Q3 trong tổng quan dự án |
 | OQ-05 | Có tính phạt chậm nộp hoặc cho phép nộp trước nhiều kỳ không? | RAW-013 | TQ-Q05 |
-| OQ-06 | Mẫu biên lai và mẫu thông báo thu tiền chính thức là gì? Thông báo có in từ hệ thống không? | RAW-011, RAW-014 | TQ-Q07; Q2 Phase 1 |
+| OQ-06 | Mẫu biên lai và mẫu thông báo thu tiền chính thức là gì? Thông báo có in từ hệ thống không? | RAW-011, RAW-014 | TQ-Q07; Q2 trong tổng quan dự án |
 | OQ-07 | Cơ quan chức năng yêu cầu chính xác những trường thông tin và biểu mẫu nào theo quy định hiện hành? | RAW-006, RAW-008, RAW-009 | CQ-Q04 |
 | OQ-08 | Có lưu số giấy tờ tùy thân không, nếu có thì mức che và ai được xem? | RAW-006, RAW-024 | CQ-Q04; CD-Q07 |
 | OQ-09 | Cần ghi nhận những hình thức nộp nào (tiền mặt, chuyển khoản, khác)? | RAW-013 | TQ-Q04 |
@@ -205,7 +205,7 @@ Tiếp nối AS-01…AS-10 trong [01_Project_Overview.md](01_Project_Overview.md
 | AS-17 | Dữ liệu thu phí, hộ và nhân khẩu được xử lý bằng sửa hoặc hủy kèm lý do và lưu vết, không xóa cứng. | BQT-Q09, TQ-Q06, CQ-Q06 |
 | AS-18 | v1.0 lưu các trường cư trú cơ bản (họ tên, ngày sinh, giới tính, quan hệ chủ hộ, tình trạng cư trú, thời hạn); biểu mẫu chính xác sẽ xác thực sau. | CQ-Q04 |
 | AS-19 | Hộ chưa đóng khoản đóng góp tự nguyện không bị coi là nợ và không xuất hiện trong danh sách nhắc nộp. | CD-Q05, CQ-Q07 |
-| AS-20 | Mức ưu tiên MoSCoW trong tập RAW chỉ là gợi ý sơ bộ; Product Owner chốt khi lập Product Backlog. | Phase 3+ |
+| AS-20 | Mức ưu tiên MoSCoW trong tập RAW chỉ là gợi ý sơ bộ; Product Owner chốt khi lập Product Backlog. | Giai đoạn phân tích |
 
 ## 11. Conflicts / items requiring validation
 
@@ -225,7 +225,7 @@ Các mục trên cần xác thực với khách hàng thật (nếu có). Trong 
 ## 12. Truy vết và sẵn sàng cho phase sau
 
 - Mỗi RAW có Source, Stakeholder, Evidence Reference và Target Artefact (Epic dự kiến). Sáu Epic dự kiến: *Tài khoản & truy cập*, *Quản lý hộ gia đình*, *Quản lý nhân khẩu*, *Quản lý khoản thu*, *Thu phí*, *Tra cứu & thống kê*. NFR sẽ chuyển thành Technical Story hoặc Definition of Done.
-- Chuỗi truy vết hiện có: Simulated interview (Q) → Wish → RAW. Các phase sau nối tiếp: RAW → Epic → Feature → User Story → Acceptance Criteria.
+- Chuỗi truy vết hiện có: phỏng vấn kịch bản (Q) → Wish → RAW. Các bước sau nối tiếp: RAW → Epic → Feature → User Story → Acceptance Criteria.
 - Phần As-Is dựa vào WA-01, WA-02 và các câu trả lời về *Current process / Pain Points*. Phần To-Be dựa vào các câu *Wishlist / Vision*. Epic, Feature và US dựa vào cột Target Artefact và danh sách RAW.
 - Ưu tiên MoSCoW trong sheet RAW chỉ là gợi ý ban đầu (AS-20).
 
@@ -233,10 +233,10 @@ Các mục trên cần xác thực với khách hàng thật (nếu có). Trong 
 
 | Chỉ số | Giá trị |
 |---|---|
-| Simulated interview | 4 (48 câu hỏi) |
+| phỏng vấn kịch bản | 4 (48 câu hỏi) |
 | Client Wish | 30 |
-| Pain Point | 10 (tại thời điểm role-play; Phase 3 bổ sung PP-11 và PP-12, tổng 12 trong `04_AsIs_ToBe.md`) |
+| Pain Point | 10 (tại thời điểm role-play; bổ sung khi phân tích As-Is PP-11 và PP-12, tổng 12 trong `04_AsIs_ToBe.md`) |
 | RAW requirement | 30 (FR 23: 21 v1.0 + 2 roadmap; NFR 7) |
 | Open Question | 14 |
-| Assumption mới (Phase 2) | 10 |
+| Assumption mới | 10 |
 | Conflict | 8 |

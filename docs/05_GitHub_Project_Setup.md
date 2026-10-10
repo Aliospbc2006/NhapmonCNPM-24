@@ -1,12 +1,12 @@
 # GitHub Project Setup — BlueMoon v1.0 (Nhóm 24)
 
-**Phase 8.** GitHub Project, 41 Issue User Story và 150 Issue task đã được tạo từ dữ liệu đã chốt trong `deliverables/06_Product_Backlog_Sprint_Plan.xlsx` (sheet Product_Backlog, Traceability, Sprint_1/2/3) và `deliverables/05_Epic_UserStory.xlsx`. Không có requirement, User Story, Acceptance Criteria, MoSCoW, Story Point, Sprint hay phân công nào bị thay đổi.
+**Giai đoạn 8.** GitHub Project, 41 Issue User Story và 150 Issue task đã được tạo từ dữ liệu đã chốt trong `deliverables/06_Product_Backlog_Sprint_Plan.xlsx` (sheet Product_Backlog, Traceability, Sprint_1/2/3) và `deliverables/05_Epic_UserStory.xlsx`. Không có requirement, User Story, Acceptance Criteria, MoSCoW, Story Point, Sprint hay phân công nào bị thay đổi.
 
 - Repository: https://github.com/Aliospbc2006/NhapmonCNPM-24
 - Project name: **BlueMoon v1.0 - Nhóm 24**
 - Project URL: https://github.com/users/Aliospbc2006/projects/2
 - Mô tả Project: Bảng quản lý Product Backlog, Sprint Backlog và tiến độ phát triển của dự án BlueMoon Nhóm 24.
-- Stakeholder, Wish, RAW và User Story đều là **Simulated stakeholder input** (*yêu cầu giả lập từ bối cảnh bài toán*).
+- Stakeholder, Wish, RAW và User Story đều là thông tin stakeholder theo kịch bản.
 
 ## Tóm tắt kế hoạch
 
@@ -44,7 +44,7 @@ Board dùng đúng 5 cột Status theo bảng mẫu của giảng viên, theo th
 | Mọi task (150 task) | Todo |
 | Review, Done | Chưa có item nào |
 
-Lưu ý: cột Status trong sheet Product_Backlog ghi "Sprint Backlog" cho cả 31 story đã xếp Sprint 1–3. Theo hướng dẫn Phase 8, chỉ story Sprint 1 được đặt ở Sprint Backlog; story Sprint 2 và 3 giữ ở Product Backlog tới khi sprint bắt đầu. Khi kích hoạt Sprint 2 hoặc 3, chuyển các story của sprint đó sang Sprint Backlog.
+Lưu ý: cột Status trong sheet Product_Backlog ghi "Sprint Backlog" cho cả 31 story đã xếp Sprint 1–3. Theo hướng dẫn Giai đoạn 8, chỉ story Sprint 1 được đặt ở Sprint Backlog; story Sprint 2 và 3 giữ ở Product Backlog tới khi sprint bắt đầu. Khi kích hoạt Sprint 2 hoặc 3, chuyển các story của sprint đó sang Sprint Backlog.
 
 ## Custom fields
 
@@ -62,7 +62,7 @@ GitHub không cho đặt tên field là "Type" hoặc "Reviewer" (tên dành ri�
 
 ## Quy ước Issue
 
-**User Story:** 1 User Story = 1 Issue. Tiêu đề `[US-XX] <tiêu đề ngắn tiếng Việt>`, nhãn `user-story` và nhãn MoSCoW (`must` / `should` / `could`). Body gồm User Story nguyên văn, mục Thông tin (US ID, Epic, Feature, Business Value, MoSCoW, Story Points, Dependency, Planned Sprint, Source RAW ID) và toàn bộ Acceptance Criteria (123 AC) copy nguyên văn từ workbook. Tiêu đề ngắn là phần duy nhất do Phase 8 đặt, workbook không có cột này.
+**User Story:** 1 User Story = 1 Issue. Tiêu đề `[US-XX] <tiêu đề ngắn tiếng Việt>`, nhãn `user-story` và nhãn MoSCoW (`must` / `should` / `could`). Body gồm User Story nguyên văn, mục Thông tin (US ID, Epic, Feature, Business Value, MoSCoW, Story Points, Dependency, Planned Sprint, Source RAW ID) và toàn bộ Acceptance Criteria (123 AC) copy nguyên văn từ workbook. Tiêu đề ngắn là phần duy nhất do Giai đoạn 8 đặt, workbook không có cột này.
 
 **Task:** đúng Task ID trong workbook. Tiêu đề `[S1-T01] <mô tả task>`, nhãn `task`. Body gồm Task ID, Related User Story, Sprint, Assignee, Estimate, Dependency, Deliverable, Reviewer và mô tả.
 
@@ -101,4 +101,4 @@ Chi tiết quy trình Scrum, Definition of Done và vai trò: `docs/02_Agile_Scr
 | Issue từ 41 User Story, thêm vào Project | Xong |
 | Issue từ 150 task (55 + 46 + 49), thêm vào Project, 117 sub-issue | Xong |
 | Gán GitHub Assignee | Xong: 150/150 task |
-| Thay đổi Phase 9 (review của thành viên) | Nằm trên nhánh `fix/team-review-feedback`, chưa merge vào `main` |
+| Thay đổi sau review của thành viên | Đã merge vào `main` |
