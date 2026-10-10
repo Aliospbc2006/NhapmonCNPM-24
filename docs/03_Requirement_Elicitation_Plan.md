@@ -2,37 +2,37 @@
 
 | Mục | Giá trị |
 |---|---|
-| Phiên bản tài liệu | 0.1 (Phase 2 — bản nháp, chờ nhóm xác nhận) |
-| Loại | Simulated Interview / Role-play for Requirement Elicitation |
+| Phiên bản tài liệu | 0.1 (bản nháp, chờ nhóm xác nhận) |
+| Loại | Phỏng vấn theo kịch bản (role-play) phục vụ Requirement Elicitation |
 | Liên quan | [01_Project_Overview.md](01_Project_Overview.md), [02_Agile_Scrum_Plan.md](02_Agile_Scrum_Plan.md), [04_Interview_Report.md](04_Interview_Report.md) |
 
-> **Về phương pháp.** Nhóm **không** liên hệ được với Ban quản trị hay cư dân BlueMoon. Vì vậy các buổi "phỏng vấn" trong project là **role-play stakeholder interview**. Một thành viên đóng vai Analyst và tự viết câu trả lời của các stakeholder *giả lập*, dựa trên đề bài BlueMoon, tài liệu hướng dẫn Elicitation và hiểu biết về nghiệp vụ.
-> - Mọi biên bản là **Simulated stakeholder input** (*yêu cầu giả lập từ bối cảnh bài toán*). Đó không phải kết quả làm việc với người thật.
+> **Về phương pháp.** Nhóm **không** liên hệ được với Ban quản trị hay cư dân BlueMoon. Vì vậy các buổi "phỏng vấn" trong project là **role-play stakeholder interview**. Một thành viên đóng vai Analyst và tự viết câu trả lời của các stakeholder theo kịch bản, dựa trên đề bài BlueMoon, tài liệu hướng dẫn Elicitation và hiểu biết về nghiệp vụ.
+> - Mọi biên bản là thông tin stakeholder theo kịch bản. Đó không phải kết quả làm việc với người thật.
 > - Không có tên thật, chữ ký, ghi âm, ảnh chụp, số điện thoại, địa chỉ, ngày hay giờ họp thật.
-> - Nếu đem dự án ra ngoài môn học, nội dung giả lập phải được **xác thực** (validate) với khách hàng thật (xem mục 7).
+> - Nếu đem dự án ra ngoài môn học, nội dung xây dựng theo kịch bản phải được **xác thực** (validate) với khách hàng thật (xem mục 7).
 
 ---
 
 ## 1. Mục tiêu khai phá yêu cầu
 
-Các mục tiêu dưới đây lấy từ OBJ-01…OBJ-08 trong tài liệu hướng dẫn BTL, cho Phase 2:
+Các mục tiêu dưới đây lấy từ OBJ-01…OBJ-08 trong tài liệu hướng dẫn BTL, cho giai đoạn phát hiện yêu cầu:
 
 | ID | Mục tiêu | Chỉ số đạt | Artefact đầu ra |
 |---|---|---|---|
-| EL-01 | Thu thập yêu cầu thô (RAW) cho BlueMoon v1.0, bao phủ 7 nhóm chức năng | 20–30 RAW (hướng dẫn gốc nêu ≥30; Phase này chọn 30 gồm cả NFR và roadmap) | `deliverables/04_Raw_Requirements.xlsx` |
+| EL-01 | Thu thập yêu cầu thô (RAW) cho BlueMoon v1.0, bao phủ 7 nhóm chức năng | 20–30 RAW (hướng dẫn gốc nêu ≥30; nhóm chọn 30 gồm cả NFR và roadmap) | `deliverables/04_Raw_Requirements.xlsx` |
 | EL-02 | Xác định yêu cầu phi chức năng (bảo mật, phân quyền, sao lưu, hiệu năng, audit log…) | ≥5 NFR | Sheet `NFR` |
 | EL-03 | Ghi nhận hiện trạng (As-Is) và pain point từ góc nhìn từng stakeholder | Mỗi stakeholder có phần As-Is và Pain Points | 4 biên bản trong `docs/interviews/` |
 | EL-04 | Ghi nhận mong muốn thô (Client's Wish List), chưa lọc, chưa ưu tiên chính thức | 20–30 wish | Sheet `Client_Wish_List`, `04_Interview_Report.md` |
 | EL-05 | Phát hiện xung đột, giả định và câu hỏi cần xác thực | Danh sách Open Questions và Conflicts | `04_Interview_Report.md` |
-| EL-06 | Làm đầu vào cho các phase sau: As-Is → To-Be → Epic → Feature → User Story → AC | Mỗi RAW có Source, Evidence Reference, Target Artefact | `deliverables/04_Raw_Requirements.xlsx` |
+| EL-06 | Làm đầu vào cho các bước sau: As-Is → To-Be → Epic → Feature → User Story → AC | Mỗi RAW có Source, Evidence Reference, Target Artefact | `deliverables/04_Raw_Requirements.xlsx` |
 
 Phạm vi nội dung là **BlueMoon v1.0**: đăng nhập/đổi mật khẩu, hộ gia đình, nhân khẩu, khoản thu, thu phí, tra cứu/tìm kiếm, thống kê. Phí gửi xe và điện/nước/internet (v2.0) chỉ ghi ở mức roadmap, *Won't-have cho v1.0*.
 
-## 2. Các nhóm stakeholder giả lập
+## 2. Các nhóm stakeholder theo kịch bản
 
 Mỗi stakeholder là một **vai trò**, không gắn với người cụ thể.
 
-| Mã | Stakeholder giả lập | Vai trò trong bài toán | Quan hệ với hệ thống v1.0 | Biên bản |
+| Mã | Stakeholder theo kịch bản | Vai trò trong bài toán | Quan hệ với hệ thống v1.0 | Biên bản |
 |---|---|---|---|---|
 | BQT | Đại diện Ban quản trị (cấp quyết định) | Khách hàng; quyết định phạm vi, ưu tiên | Người dùng (quản trị) | `01_Ban_Quan_Tri_Interview.md` |
 | TQ | Thủ quỹ / người thu phí | Người dùng cuối thao tác thu phí hằng ngày | Người dùng trực tiếp | `02_Thu_Quy_Interview.md` |
@@ -47,7 +47,7 @@ Mỗi stakeholder là một **vai trò**, không gắn với người cụ thể
 | PS-02 | Bộ bài tập — ví dụ Project Charter ở Bài 4.1 (Chương 4, **ngoài phạm vi đối chiếu BTL**) | Mục đích, mục tiêu đo được, phạm vi sản phẩm, loại trừ nhập liệu | Chỉ tham khảo bối cảnh; các giả định rút ra từ đây là TEAM DECISION, không phải yêu cầu của giảng viên |
 | GD-01 | `01_ Huong dan … (Elicitation).pdf` | Quy trình Elicitation, artefact, chỉ tiêu | Khung phương pháp |
 | DA-01 | Mẫu sổ quản lý thu các khoản đóng góp (Hình 1-1 trong đề) | Minh họa thu chi thủ công | Tham chiếu để suy luận cột dữ liệu; nhóm chưa dùng nội dung chi tiết của hình để tạo yêu cầu |
-| DA-02 | **Biểu mẫu Excel giả định** (do nhóm đặt ra, xem bên dưới) | Mô hình hóa file Excel hiện hành của Ban quản trị | Phân tích tài liệu giả lập, ghi rõ là giả định |
+| DA-02 | **Biểu mẫu Excel giả định** (do nhóm đặt ra, xem bên dưới) | Mô hình hóa file Excel hiện hành của Ban quản trị | Phân tích tài liệu theo biểu mẫu giả định, ghi rõ là giả định |
 | WA-01 | **Quy trình As-Is thu phí hằng tháng** (giả định) | Luồng thủ công hiện hành | Workflow analysis |
 | WA-02 | **Quy trình As-Is quản lý hộ/nhân khẩu và cung cấp thông tin** (giả định) | Luồng thủ công hiện hành | Workflow analysis |
 
@@ -82,17 +82,17 @@ Mỗi stakeholder là một **vai trò**, không gắn với người cụ thể
 | **Semi-structured interview (role-play)** | 4 biên bản, mỗi biên bản 10–12 câu hỏi theo Interview Script (mục 6) | BQT, TQ, CD, CQ | Biên bản trong `docs/interviews/`, Wish List, RAW |
 | **Document analysis** | Đọc đề bài, hướng dẫn Elicitation; phân tích biểu mẫu Excel giả định | PS-01, PS-02, GD-01, DA-01, DA-02 | Ràng buộc phạm vi, trường dữ liệu, loại khoản phí |
 | **Workflow analysis** | Mô hình hóa quy trình As-Is và pain point | WA-01, WA-02 | Cơ sở cho As-Is và To-Be ở phase sau |
-| **Observation (giả lập, chưa thực hiện)** | Kịch bản quan sát thu phí, mục 4.1 | TQ | SIM-OBS-01: kiểm tra chéo pain point |
-| **Survey (giả lập, chưa thực hiện)** | Mẫu khảo sát cư dân, mục 4.2 | CD | SIM-SURVEY-01: kiểm tra chéo nhu cầu cư dân |
+| **Observation (kịch bản, chưa thực hiện)** | Kịch bản quan sát thu phí, mục 4.1 | TQ | SIM-OBS-01: kiểm tra chéo pain point |
+| **Survey (kịch bản, chưa thực hiện)** | Mẫu khảo sát cư dân, mục 4.2 | CD | SIM-SURVEY-01: kiểm tra chéo nhu cầu cư dân |
 
-Hướng dẫn gốc còn có quan sát công việc, khảo sát cư dân và workshop với Ban quản trị. Nhóm không gặp được stakeholder thật nên **không thực hiện** các kỹ thuật này với người thật. Để giữ đủ các kỹ thuật mà hướng dẫn nêu, nhóm bổ sung hai tài liệu **giả lập** ở mục 4.1 và 4.2. Workshop vẫn chưa làm và nằm trong danh sách mục cần xác thực.
+Hướng dẫn gốc còn có quan sát công việc, khảo sát cư dân và workshop với Ban quản trị. Nhóm không gặp được stakeholder thật nên **không thực hiện** các kỹ thuật này với người thật. Để giữ đủ các kỹ thuật mà hướng dẫn nêu, nhóm bổ sung hai tài liệu **kịch bản** ở mục 4.1 và 4.2. Workshop vẫn chưa làm và nằm trong danh sách mục cần xác thực.
 
-**Quy tắc cho hai tài liệu giả lập:**
+**Quy tắc cho hai tài liệu kịch bản:**
 - Chỉ dùng để *kiểm tra chéo* các WISH, RAW và pain point đã có; **không** sinh RAW, Epic, User Story hay thay đổi phạm vi.
 - Không có số liệu đo thật (thời gian, số lỗi), không có người tham gia thật, không có ngày hay chữ ký. Ghi "chưa đo" khi thiếu số liệu.
-- Nếu sau này làm thật, kết quả thật thay thế nội dung giả lập và mọi thay đổi yêu cầu phải qua quy trình thay đổi backlog.
+- Nếu sau này làm thật, kết quả thật thay thế nội dung kịch bản và mọi thay đổi yêu cầu phải qua quy trình thay đổi backlog.
 
-### 4.1 SIM-OBS-01 — Kịch bản quan sát thu phí (giả lập)
+### 4.1 SIM-OBS-01 — Kịch bản quan sát thu phí (chưa thực hiện)
 
 | Mục | Nội dung |
 |---|---|
@@ -103,7 +103,7 @@ Hướng dẫn gốc còn có quan sát công việc, khảo sát cư dân và w
 | Đối chiếu với | PP-02, PP-04, PP-05, PP-06, PP-12; RAW-013, RAW-014, RAW-015, RAW-016 |
 | Kết quả hiện có | **Chưa thực hiện, chưa có số liệu.** Cột "thời gian" để trống cho tới khi quan sát thật |
 
-### 4.2 SIM-SURVEY-01 — Mẫu khảo sát cư dân (giả lập)
+### 4.2 SIM-SURVEY-01 — Mẫu khảo sát cư dân (chưa thực hiện)
 
 Mẫu ngắn, trả lời bằng thang 1–5 hoặc chọn một. Dựa trên SIM-INT-CD, chỉ để kiểm tra chéo các nhu cầu đã có (PP-06, PP-08, PP-09, WISH-24, WISH-25).
 
@@ -144,7 +144,7 @@ Mỗi biên bản dùng cùng khung 8 phần. Câu hỏi cụ thể được đi
 
 Quy tắc viết biên bản role-play:
 - Câu trả lời viết tự nhiên. Không cần hoàn hảo, có thể lẫn mong muốn, pain point, ưu tiên và vài chỗ hơi lệch ý giữa các stakeholder.
-- Bám sát đề bài. Chỗ nào vượt ngoài đề bài thì đánh dấu *Assumption* trong Analyst note.
+- Bám sát đề bài. Chỗ nào vượt ngoài đề bài thì đánh dấu *Assumption* trong Ghi chú của Analyst.
 - Không tự bịa số liệu, quy định pháp luật hay biểu mẫu mà đề bài không nói. Những điểm đó ghi thành Open Question để xác thực sau.
 - Mỗi câu hỏi có mã `SIM-INT-<mã stakeholder>-Qnn`, dùng làm Evidence Reference.
 
