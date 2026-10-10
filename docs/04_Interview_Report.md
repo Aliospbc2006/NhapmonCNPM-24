@@ -222,7 +222,7 @@ Tiếp nối AS-01…AS-10 trong [01_Project_Overview.md](01_Project_Overview.md
 
 Các mục trên cần xác thực với khách hàng thật (nếu có). Trong BTL, **Product Owner** của nhóm tạm quyết định khi lập Product Backlog và ghi rõ đó là giả định.
 
-## 12. Truy vết và sẵn sàng cho phase sau
+## 12. Truy vết và sẵn sàng cho các bước sau
 
 - Mỗi RAW có Source, Stakeholder, Evidence Reference và Target Artefact (Epic dự kiến). Sáu Epic dự kiến: *Tài khoản & truy cập*, *Quản lý hộ gia đình*, *Quản lý nhân khẩu*, *Quản lý khoản thu*, *Thu phí*, *Tra cứu & thống kê*. NFR sẽ chuyển thành Technical Story hoặc Definition of Done.
 - Chuỗi truy vết hiện có: phỏng vấn kịch bản (Q) → Wish → RAW. Các bước sau nối tiếp: RAW → Epic → Feature → User Story → Acceptance Criteria.
@@ -233,7 +233,7 @@ Các mục trên cần xác thực với khách hàng thật (nếu có). Trong 
 
 | Chỉ số | Giá trị |
 |---|---|
-| phỏng vấn kịch bản | 4 (48 câu hỏi) |
+| Biên bản phỏng vấn | 4 (48 câu hỏi) |
 | Client Wish | 30 |
 | Pain Point | 10 (tại thời điểm role-play; bổ sung khi phân tích As-Is PP-11 và PP-12, tổng 12 trong `04_AsIs_ToBe.md`) |
 | RAW requirement | 30 (FR 23: 21 v1.0 + 2 roadmap; NFR 7) |

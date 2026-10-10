@@ -81,7 +81,7 @@ Mỗi stakeholder là một **vai trò**, không gắn với người cụ thể
 |---|---|---|---|
 | **Semi-structured interview (role-play)** | 4 biên bản, mỗi biên bản 10–12 câu hỏi theo Interview Script (mục 6) | BQT, TQ, CD, CQ | Biên bản trong `docs/interviews/`, Wish List, RAW |
 | **Document analysis** | Đọc đề bài, hướng dẫn Elicitation; phân tích biểu mẫu Excel giả định | PS-01, PS-02, GD-01, DA-01, DA-02 | Ràng buộc phạm vi, trường dữ liệu, loại khoản phí |
-| **Workflow analysis** | Mô hình hóa quy trình As-Is và pain point | WA-01, WA-02 | Cơ sở cho As-Is và To-Be ở phase sau |
+| **Workflow analysis** | Mô hình hóa quy trình As-Is và pain point | WA-01, WA-02 | Cơ sở cho As-Is và To-Be ở bước sau |
 | **Observation (kịch bản, chưa thực hiện)** | Kịch bản quan sát thu phí, mục 4.1 | TQ | SIM-OBS-01: kiểm tra chéo pain point |
 | **Survey (kịch bản, chưa thực hiện)** | Mẫu khảo sát cư dân, mục 4.2 | CD | SIM-SURVEY-01: kiểm tra chéo nhu cầu cư dân |
 
