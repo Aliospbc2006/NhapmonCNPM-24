@@ -2,23 +2,20 @@
 
 | Mục | Giá trị |
 |---|---|
-| Phiên bản tài liệu | 0.1 (Phase 3 — bản nháp, chờ nhóm xác nhận) |
+| Phiên bản tài liệu | 0.1 (bản nháp, chờ nhóm xác nhận) |
 | Đầu vào | [01_Project_Overview.md](01_Project_Overview.md), [03_Requirement_Elicitation_Plan.md](03_Requirement_Elicitation_Plan.md), [04_Interview_Report.md](04_Interview_Report.md), `deliverables/04_Raw_Requirements.xlsx` (30 RAW) |
-| Loại nội dung | As-Is là **quy trình giả định** dựa trên đề bài; Pain Point và To-Be là **Simulated stakeholder input** / *Yêu cầu giả lập từ bối cảnh bài toán* |
+| Loại nội dung | As-Is là **quy trình giả định** dựa trên đề bài; Pain Point và To-Be là thông tin stakeholder theo kịch bản |
 
-> **Lưu ý về nguồn.** Nhóm không quan sát hay phỏng vấn thực tế. Mỗi bước As-Is và mỗi pain point có cột **cơ sở** cho biết nó đến từ đâu: *Đề bài* (đề nêu thẳng), *Suy ra từ đề bài* (hệ quả của cách làm thủ công) hoặc *Giả lập* (chỉ có trong role-play, cần xác thực). Tài liệu này **không sửa** RAW hay các file Phase 0–2.
+> **Lưu ý về nguồn.** Nhóm không quan sát hay phỏng vấn thực tế. Mỗi bước As-Is và mỗi pain point có cột **cơ sở** cho biết nó đến từ đâu: *Đề bài* (đề nêu thẳng), *Suy ra từ đề bài* (hệ quả của cách làm thủ công) hoặc *Kịch bản* (chỉ có trong role-play, cần xác thực). Tài liệu này không sửa nội dung RAW.
 
-## 0. Rà soát RAW trước khi phân tích
+## 0. Ghi chú về dữ liệu đầu vào
 
-Nhóm đối chiếu sheet `Raw_Requirements` trong Excel với dữ liệu nguồn của Phase 2: 30 RAW, **0 khác biệt**, không có lỗi nào làm sai nội dung RAW. Có vài ghi chú dưới đây, **chưa sửa RAW**:
+Nhóm đối chiếu sheet `Raw_Requirements` với báo cáo phỏng vấn, 30 RAW khớp nhau. Có bốn điểm cần biết khi đọc tài liệu này:
 
-| # | Ghi chú | Hướng xử lý |
-|---|---|---|
-| N-1 | Ba file cùng tiền tố `04_`: `docs/04_Interview_Report.md`, `docs/04_AsIs_ToBe.md`, `deliverables/04_Raw_Requirements.xlsx`. | Giữ tên file theo yêu cầu. Cân nhắc đánh số lại ở phase tổng hợp. |
-| N-2 | Phase 2 gợi ý 6 Epic dự kiến, trong khi hướng dẫn BTL nêu 5 Epic. | Quyết định ở phase Epic/Feature (ví dụ gộp hộ gia đình và nhân khẩu). |
-| N-3 | Một số con số NFR (3 giây, quy mô, số lần đăng nhập sai) là giả định trong RAW-022, RAW-027, RAW-028. | Mục 6 tinh chỉnh thành tiêu chí kiểm thử và gắn nhãn *proposed / TBD*. Ở Phase 9, RAW-022…RAW-028 được viết lại ở mức nhu cầu của stakeholder (không còn số liệu cụ thể); các con số nằm ở sheet NFR và mục 6 này, nội dung RAW cũ lưu ở cột Notes. |
-| N-4 | RAW-016 (tìm hộ, kèm số tiền phải nộp) giao một phần với RAW-018 (công nợ), RAW-020 (hộ chưa nộp) giao một phần với RAW-018. Phase 2 đã tách vì khác mục đích (tìm một hộ so với báo cáo toàn bộ hộ). | Giữ nguyên; phân ranh bằng Acceptance Criteria ở phase User Story. |
-| N-5 | Bảng Pain Point ở Phase 2 có PP-01…PP-10. Phase 3 phân loại lại PP-10 thành *concern* (mối lo, không phải lỗi quy trình hiện tại), bổ sung PP-11, PP-12 và mở rộng liên kết RAW. | Báo cáo Phase 2 và Interview_Summary trong Excel không sửa (chỉ liệt kê PP-01…10). |
+- Một số con số NFR (3 giây, quy mô, số lần đăng nhập sai) là giả định. Mục 6 chuyển chúng thành tiêu chí kiểm thử và đánh dấu *proposed / TBD*. Các câu RAW-022…RAW-028 được viết ở mức nhu cầu của stakeholder; con số cụ thể nằm ở sheet NFR và mục 6.
+- RAW-016 (tìm hộ kèm số tiền phải nộp), RAW-018 (công nợ) và RAW-020 (hộ chưa nộp) có phần giao nhau. Nhóm vẫn tách vì mục đích khác nhau (tìm một hộ so với báo cáo toàn bộ hộ), và sẽ phân ranh bằng Acceptance Criteria.
+- Báo cáo phỏng vấn liệt kê 10 pain point (PP-01…PP-10). Khi phân tích As-Is, nhóm chuyển PP-10 thành *concern* (mối lo cho hệ thống mới, không phải lỗi quy trình hiện tại), thêm PP-11, PP-12 và mở rộng liên kết RAW.
+- Bản dự kiến lúc phỏng vấn có 6 Epic, hướng dẫn BTL nêu 5 Epic. Số Epic cuối cùng (7) được chốt khi phân tích User Story.
 
 ## 1. Phạm vi và quy ước
 
@@ -39,18 +36,18 @@ Có hai quy trình chính:
 
 | Step | Actor | Current Tool | Input | Activity | Output | Pain Point | Cơ sở |
 |---|---|---|---|---|---|---|---|
-| AI-01 | Ban quản trị | Excel, ghi chép nội bộ | Quy định phí, đơn giá, diện tích căn hộ | Xác định các khoản thu của tháng hoặc đợt (phí dịch vụ, phí quản lý, đóng góp) và đơn giá áp dụng | Danh sách khoản thu của kỳ | PP-01 | Đề bài (các loại phí); chi tiết công cụ: giả lập |
+| AI-01 | Ban quản trị | Excel, ghi chép nội bộ | Quy định phí, đơn giá, diện tích căn hộ | Xác định các khoản thu của tháng hoặc đợt (phí dịch vụ, phí quản lý, đóng góp) và đơn giá áp dụng | Danh sách khoản thu của kỳ | PP-01 | Đề bài (các loại phí); chi tiết công cụ: suy luận của nhóm |
 | AI-02 | Ban quản trị (kế toán) | Excel, máy tính cầm tay | Danh sách hộ, diện tích, đơn giá | Tính tay diện tích × đơn giá cho từng hộ, lập danh sách phí phải đóng | Danh sách khoản phải thu theo hộ | PP-03 | Đề bài (Ban lập danh sách phí hằng tháng); tính tay: suy ra |
-| AI-03 | Ban quản trị | Thông báo giấy hoặc tin nhắn | Danh sách khoản phải thu | Gửi thông báo thu tiền cho từng hộ | Thông báo thu tiền | PP-08 | Đề bài (gửi thông báo thu tiền); hình thức gửi: giả lập |
+| AI-03 | Ban quản trị | Thông báo giấy hoặc tin nhắn | Danh sách khoản phải thu | Gửi thông báo thu tiền cho từng hộ | Thông báo thu tiền | PP-08 | Đề bài (gửi thông báo thu tiền); hình thức gửi: suy luận của nhóm |
 | AI-04 | Hộ gia đình; Thủ quỹ | Excel, sổ giấy | Số căn hộ hoặc tên chủ hộ do hộ cung cấp | Thủ quỹ tìm hộ trong Excel hoặc sổ để biết số tiền cần thu | Hộ được xác định, số tiền phải nộp | PP-04 | Suy ra (quản lý bằng Excel, sổ); quy mô: giả định |
-| AI-05 | Thủ quỹ | Sổ giấy, Excel | Tiền nộp, thông tin hộ | Ghi ngày và số tiền vào sổ, sau đó gõ lại vào Excel; trường hợp nộp thiếu hoặc nộp gộp ghi chú bên lề | Dòng ghi sổ và dòng Excel (có thể không khớp) | PP-01, PP-02, PP-12 | Đề bài (thu phí thủ công, có Excel); chi tiết: giả lập |
-| AI-06 | Thủ quỹ | Biên lai giấy viết tay | Thông tin giao dịch | Viết biên lai tay và đưa cho hộ | Biên lai giấy | PP-06 | Đề bài (mẫu giấy tờ thu chi thủ công); chi tiết: giả lập |
-| AI-07 | Thủ quỹ | Gạch xóa trong sổ; sửa đè trong Excel | Giao dịch nhập nhầm | Sửa giao dịch bằng cách gạch xóa hoặc sửa đè, không ghi lý do | Số liệu đã sửa, không còn dấu vết | PP-05 | Suy ra (sổ giấy và Excel không có log); chi tiết: giả lập |
-| AI-08 | Thủ quỹ; Ban quản trị | Excel (lọc), đối chiếu sổ giấy | Excel và sổ thu | Lọc hộ chưa nộp, đối chiếu hai nguồn, nhắc nộp | Danh sách hộ còn thiếu (tạm thời) | PP-02, PP-01 | Suy ra; chi tiết: giả lập |
+| AI-05 | Thủ quỹ | Sổ giấy, Excel | Tiền nộp, thông tin hộ | Ghi ngày và số tiền vào sổ, sau đó gõ lại vào Excel; trường hợp nộp thiếu hoặc nộp gộp ghi chú bên lề | Dòng ghi sổ và dòng Excel (có thể không khớp) | PP-01, PP-02, PP-12 | Đề bài (thu phí thủ công, có Excel); chi tiết: suy luận của nhóm |
+| AI-06 | Thủ quỹ | Biên lai giấy viết tay | Thông tin giao dịch | Viết biên lai tay và đưa cho hộ | Biên lai giấy | PP-06 | Đề bài (mẫu giấy tờ thu chi thủ công); chi tiết: suy luận của nhóm |
+| AI-07 | Thủ quỹ | Gạch xóa trong sổ; sửa đè trong Excel | Giao dịch nhập nhầm | Sửa giao dịch bằng cách gạch xóa hoặc sửa đè, không ghi lý do | Số liệu đã sửa, không còn dấu vết | PP-05 | Suy ra (sổ giấy và Excel không có log); chi tiết: suy luận của nhóm |
+| AI-08 | Thủ quỹ; Ban quản trị | Excel (lọc), đối chiếu sổ giấy | Excel và sổ thu | Lọc hộ chưa nộp, đối chiếu hai nguồn, nhắc nộp | Danh sách hộ còn thiếu (tạm thời) | PP-02, PP-01 | Suy ra; chi tiết: suy luận của nhóm |
 | AI-09 | Thủ quỹ → Ban quản trị | Excel, máy tính cầm tay | Sổ thu và Excel của kỳ | Đối chiếu, cộng tổng, lập số liệu báo cáo cho Ban | Báo cáo tổng thu của kỳ | PP-11, PP-01 | Đề bài (cần thống kê cơ bản); chi tiết: suy ra |
-| AI-10 | Ban quản trị; cơ quan chức năng | Excel, sổ, bản in | Các khoản đóng góp theo đợt | Tổng hợp tổng thu và danh sách hộ đã đóng cho từng đợt, phối hợp với chính quyền và tổ dân phố | Báo cáo đợt đóng góp | PP-11, PP-08 | Đề bài (phối hợp thu); chi tiết: giả lập |
-| AI-11 | Chủ hộ; Ban quản trị | Báo miệng hoặc giấy; sổ tay; Excel cũ | Thông tin thay đổi của hộ, nhân khẩu | Chủ hộ báo thay đổi (thêm người, chuyển đi, đổi chủ), Ban ghi lại | Sổ hoặc Excel được cập nhật (không đều) | PP-07, PP-09 | Đề bài (quản lý hộ, nhân khẩu, biến đổi); chi tiết: giả lập |
-| AI-12 | Ban quản trị | Sổ, Excel | Thông tin tạm trú, tạm vắng | Ghi nhận tạm trú và tạm vắng, ghi chú thời gian | Thông tin cư trú tạm thời | PP-09 | Đề bài (tạm vắng, tạm trú); chi tiết: giả lập |
+| AI-10 | Ban quản trị; cơ quan chức năng | Excel, sổ, bản in | Các khoản đóng góp theo đợt | Tổng hợp tổng thu và danh sách hộ đã đóng cho từng đợt, phối hợp với chính quyền và tổ dân phố | Báo cáo đợt đóng góp | PP-11, PP-08 | Đề bài (phối hợp thu); chi tiết: suy luận của nhóm |
+| AI-11 | Chủ hộ; Ban quản trị | Báo miệng hoặc giấy; sổ tay; Excel cũ | Thông tin thay đổi của hộ, nhân khẩu | Chủ hộ báo thay đổi (thêm người, chuyển đi, đổi chủ), Ban ghi lại | Sổ hoặc Excel được cập nhật (không đều) | PP-07, PP-09 | Đề bài (quản lý hộ, nhân khẩu, biến đổi); chi tiết: suy luận của nhóm |
+| AI-12 | Ban quản trị | Sổ, Excel | Thông tin tạm trú, tạm vắng | Ghi nhận tạm trú và tạm vắng, ghi chú thời gian | Thông tin cư trú tạm thời | PP-09 | Đề bài (tạm vắng, tạm trú); chi tiết: suy luận của nhóm |
 | AI-13 | Cơ quan chức năng; Ban quản trị | Excel, bản in, đóng dấu | Yêu cầu cung cấp thông tin | Ban gom danh sách hộ, nhân khẩu từ nhiều nguồn, in hoặc gửi file | Danh sách gửi cơ quan chức năng | PP-07 | Đề bài (cung cấp thông tin khi được yêu cầu); chi tiết: suy ra |
 
 Các công cụ hiện hành (giả định): Excel, sổ giấy, biên lai giấy viết tay, máy tính cầm tay, thông báo giấy hoặc tin nhắn.
@@ -61,18 +58,18 @@ Có **12 mục**: 11 pain point của quy trình hiện tại và 1 concern (m�
 
 | ID | Loại | Pain point | Cơ sở | Bước As-Is | RAW liên quan | Nguồn |
 |---|---|---|---|---|---|---|
-| PP-01 | Process pain | Dữ liệu thu phí phân tán ở sổ giấy và Excel, không có một nguồn duy nhất nên hai bên có thể không khớp. | Suy ra từ đề bài (Excel kết hợp thủ công); chi tiết hai nơi ghi: giả lập | AI-01, AI-05, AI-08, AI-09 | RAW-013, RAW-018 | SIM-INT-BQT-Q02, Q03; PS-01 |
+| PP-01 | Process pain | Dữ liệu thu phí phân tán ở sổ giấy và Excel, không có một nguồn duy nhất nên hai bên có thể không khớp. | Suy ra từ đề bài (Excel kết hợp thủ công); chi tiết hai nơi ghi: suy luận của nhóm | AI-01, AI-05, AI-08, AI-09 | RAW-013, RAW-018 | SIM-INT-BQT-Q02, Q03; PS-01 |
 | PP-02 | Process pain | Khó theo dõi trạng thái nộp của từng hộ (đã nộp, nộp thiếu, chưa nộp): phải lọc Excel và đối chiếu sổ; nộp thiếu hoặc gộp chỉ ghi chú bên lề. | Suy ra từ đề bài (cần nắm hiện trạng các khoản thu) | AI-05, AI-08 | RAW-013, RAW-018, RAW-020 | SIM-INT-BQT-Q03; SIM-INT-TQ-Q05, Q09; PS-01 |
-| PP-03 | Process pain | Tính phí tay (diện tích × đơn giá) cho từng hộ tiềm ẩn nguy cơ sai sót; thông tin hộ sai (ví dụ diện tích) kéo theo sai nhiều kỳ. | Suy ra (phí tính theo m² trong đề); sự cố cụ thể trong role-play là giả lập, không dùng làm số liệu | AI-02 | RAW-004, RAW-011 | SIM-INT-TQ-Q03; SIM-INT-BQT-Q03; SIM-INT-CD-Q11; PS-01 |
+| PP-03 | Process pain | Tính phí tay (diện tích × đơn giá) cho từng hộ tiềm ẩn nguy cơ sai sót; thông tin hộ sai (ví dụ diện tích) kéo theo sai nhiều kỳ. | Suy ra (phí tính theo m² trong đề); sự cố cụ thể trong role-play chỉ là tình huống minh họa, không dùng làm số liệu | AI-02 | RAW-004, RAW-011 | SIM-INT-TQ-Q03; SIM-INT-BQT-Q03; SIM-INT-CD-Q11; PS-01 |
 | PP-04 | Process pain | Tìm một hộ trong Excel hoặc sổ mất thời gian, nhất là khi có nhiều hộ cần xử lý. | Suy ra (quản lý bằng Excel, sổ); mức chậm phụ thuộc quy mô, giả định | AI-04 | RAW-016, RAW-017, RAW-027 | SIM-INT-TQ-Q03, Q08 |
-| PP-05 | Process pain | Truy vết kém: sổ giấy và Excel không ghi ai sửa gì, khi nào, vì sao; sửa đè làm mất dấu vết. | Suy ra (đặc điểm của sổ giấy và Excel); chi tiết: giả lập | AI-07 | RAW-015, RAW-025 | SIM-INT-TQ-Q06; SIM-INT-BQT-Q09 |
+| PP-05 | Process pain | Truy vết kém: sổ giấy và Excel không ghi ai sửa gì, khi nào, vì sao; sửa đè làm mất dấu vết. | Suy ra (đặc điểm của sổ giấy và Excel); chi tiết: suy luận của nhóm | AI-07 | RAW-015, RAW-025 | SIM-INT-TQ-Q06; SIM-INT-BQT-Q09 |
 | PP-06 | Process pain | Biên lai viết tay tốn thời gian và có thể thiếu thông tin (khoản, kỳ, cách tính). | Suy ra từ đề bài (giấy tờ thu chi thủ công) | AI-06 | RAW-014 | SIM-INT-TQ-Q07; SIM-INT-CD-Q03, Q04; PS-01 |
 | PP-07 | Process pain | Thông tin hộ, nhân khẩu rời rạc nên khi cơ quan chức năng yêu cầu, Ban phải gom thủ công từ nhiều nguồn, mất thời gian. | Suy ra từ đề bài (cung cấp thông tin khi được yêu cầu, quản lý thủ công) | AI-11, AI-13 | RAW-003, RAW-006, RAW-009, RAW-017 | SIM-INT-BQT-Q04; SIM-INT-CQ-Q02, Q05; PS-01 |
-| PP-08 | Process pain | Cư dân khó hiểu số tiền được tính ra sao và khó biết tổng thu của quỹ đóng góp. | Giả lập từ góc nhìn cư dân (không nằm trong quy trình nội bộ của Ban); cần xác thực. **To-Be chỉ giải quyết một phần:** cư dân không dùng hệ thống ở v1.0, Ban quản trị là bên xem và giải thích cách tính (WISH-24 ngoài v1.0) | AI-03, AI-10 | RAW-011, RAW-012, RAW-019 | SIM-INT-CD-Q03, Q05 |
-| PP-09 | Process pain | Biến động nhân khẩu, tạm trú, tạm vắng không được ghi nhận đều và đủ thời gian; có thể còn thông tin hộ đã chuyển đi. | Suy ra từ đề bài (biến đổi nhân khẩu, tạm vắng, tạm trú); chi tiết: giả lập | AI-11, AI-12 | RAW-005, RAW-007, RAW-008 | SIM-INT-CD-Q06; SIM-INT-CQ-Q03; PS-01 |
-| PP-10 | Concern | Lo ngại về bảo mật dữ liệu cá nhân và tài chính: dữ liệu Excel và sổ giấy không có kiểm soát truy cập. Đây là mối lo cho hệ thống mới (driver của NFR), không phải bước lỗi của quy trình hiện tại. | Suy ra (sổ giấy và Excel không có phân quyền); mức lo ngại: giả lập. To-Be xử lý ở lớp NFR (NFR-001…004), không nằm trong luồng nghiệp vụ chính | — | RAW-001, RAW-022, RAW-023, RAW-024 | SIM-INT-CD-Q07; SIM-INT-BQT-Q08 |
-| PP-11 | Process pain | Tổng hợp và thống kê (tổng thu, còn thiếu, số hộ, số nhân khẩu) làm thủ công cuối kỳ, khó có số liệu tức thời. | Suy ra từ đề bài (Ban cần thống kê cơ bản để nắm hiện trạng); Phase 3 bổ sung | AI-09, AI-10 | RAW-019, RAW-020, RAW-021 | SIM-INT-BQT-Q07; SIM-INT-CQ-Q11; PS-01 |
-| PP-12 | Process pain | Nhập liệu thủ công và trùng lặp: ghi sổ trước rồi gõ lại vào Excel. | Giả lập (role-play thủ quỹ); phù hợp quy trình thủ công trong đề; Phase 3 bổ sung | AI-05 | RAW-013 | SIM-INT-TQ-Q02 |
+| PP-08 | Process pain | Cư dân khó hiểu số tiền được tính ra sao và khó biết tổng thu của quỹ đóng góp. | Suy ra từ góc nhìn cư dân (không nằm trong quy trình nội bộ của Ban); cần xác thực. **To-Be chỉ giải quyết một phần:** cư dân không dùng hệ thống ở v1.0, Ban quản trị là bên xem và giải thích cách tính (WISH-24 ngoài v1.0) | AI-03, AI-10 | RAW-011, RAW-012, RAW-019 | SIM-INT-CD-Q03, Q05 |
+| PP-09 | Process pain | Biến động nhân khẩu, tạm trú, tạm vắng không được ghi nhận đều và đủ thời gian; có thể còn thông tin hộ đã chuyển đi. | Suy ra từ đề bài (biến đổi nhân khẩu, tạm vắng, tạm trú); chi tiết: suy luận của nhóm | AI-11, AI-12 | RAW-005, RAW-007, RAW-008 | SIM-INT-CD-Q06; SIM-INT-CQ-Q03; PS-01 |
+| PP-10 | Concern | Lo ngại về bảo mật dữ liệu cá nhân và tài chính: dữ liệu Excel và sổ giấy không có kiểm soát truy cập. Đây là mối lo cho hệ thống mới (driver của NFR), không phải bước lỗi của quy trình hiện tại. | Suy ra (sổ giấy và Excel không có phân quyền); mức lo ngại: theo kịch bản. To-Be xử lý ở lớp NFR (NFR-001…004), không nằm trong luồng nghiệp vụ chính | — | RAW-001, RAW-022, RAW-023, RAW-024 | SIM-INT-CD-Q07; SIM-INT-BQT-Q08 |
+| PP-11 | Process pain | Tổng hợp và thống kê (tổng thu, còn thiếu, số hộ, số nhân khẩu) làm thủ công cuối kỳ, khó có số liệu tức thời. | Suy ra từ đề bài (Ban cần thống kê cơ bản để nắm hiện trạng); bổ sung khi phân tích As-Is | AI-09, AI-10 | RAW-019, RAW-020, RAW-021 | SIM-INT-BQT-Q07; SIM-INT-CQ-Q11; PS-01 |
+| PP-12 | Process pain | Nhập liệu thủ công và trùng lặp: ghi sổ trước rồi gõ lại vào Excel. | Suy ra từ kịch bản thủ quỹ; phù hợp quy trình thủ công trong đề; bổ sung khi phân tích As-Is | AI-05 | RAW-013 | SIM-INT-TQ-Q02 |
 
 **Phân nhóm theo chủ đề:**
 
@@ -117,7 +114,7 @@ Ngoài luồng chính còn có các việc làm trước hoặc làm song song, 
 - **Thiết lập:** quản lý hộ, nhân khẩu (CAP-03…CAP-07); thiết lập khoản thu và lập danh sách phải thu (CAP-08…CAP-10).
 - **Cung cấp thông tin:** Ban xuất hoặc in danh sách cho cơ quan chức năng (CAP-07). Cơ quan chức năng **không** dùng hệ thống (AS-16).
 
-Nhóm đề xuất các trạng thái thanh toán cho phase Feature (**proposed**): *Chưa nộp*, *Nộp một phần*, *Đã nộp đủ*. Giao dịch bị hủy giữ ở trạng thái *Đã hủy*. Hạn nộp (trong RAW-010) có thể dùng để báo cáo "quá hạn".
+Nhóm đề xuất các trạng thái thanh toán cho bước Feature (**proposed**): *Chưa nộp*, *Nộp một phần*, *Đã nộp đủ*. Giao dịch bị hủy giữ ở trạng thái *Đã hủy*. Hạn nộp (trong RAW-010) có thể dùng để báo cáo "quá hạn".
 
 ### 4.2 Các bước To-Be
 
@@ -196,7 +193,7 @@ ROAD-01 và ROAD-02 không có màn hình, bảng dữ liệu, User Story hay ta
 
 ## 6. NFR REFINEMENT
 
-Phase 2 có **7 NFR** (RAW-022…RAW-028). Ở đây nhóm tách chúng thành **21 tiêu chí kiểm thử** (`NFR-xxx.n`), mỗi tiêu chí có chỉ tiêu và cách kiểm tra. Từ Phase 9, câu RAW-022…RAW-028 ở mức nhu cầu; phần chi tiết và con số giữ ở sheet NFR và các tiêu chí này.
+Báo cáo phỏng vấn có **7 NFR** (RAW-022…RAW-028). Ở đây nhóm tách chúng thành **21 tiêu chí kiểm thử** (`NFR-xxx.n`), mỗi tiêu chí có chỉ tiêu và cách kiểm tra. Các câu RAW-022…RAW-028 viết ở mức nhu cầu; phần chi tiết và con số giữ ở sheet NFR và các tiêu chí này.
 
 Cột "Mức chắc chắn" có 3 giá trị: **Fixed** (từ đề bài hoặc quy định của nhóm), **Proposed** (chỉ tiêu nhóm đề xuất, chờ xác nhận) và **TBD** (chưa có số). Phân bố: Fixed 2, Proposed 12, Proposed/TBD 4, TBD 3.
 
@@ -204,7 +201,7 @@ Tải demo lớp học đề xuất cho NFR-006: 500 hộ, 2.000 nhân khẩu, 3
 
 ### NFR-001 — Bảo mật xác thực (RAW-022)
 
-Phát biểu gốc (Phase 2): *Mật khẩu không lưu ở dạng rõ (băm), giới hạn số lần đăng nhập sai liên tiếp.*
+Phát biểu ban đầu: *Mật khẩu không lưu ở dạng rõ (băm), giới hạn số lần đăng nhập sai liên tiếp.*
 
 | Tiêu chí | Phát biểu có thể kiểm thử | Chỉ tiêu | Cách kiểm tra | Mức chắc chắn |
 |---|---|---|---|---|
@@ -214,7 +211,7 @@ Phát biểu gốc (Phase 2): *Mật khẩu không lưu ở dạng rõ (băm), g
 
 ### NFR-002 — Phân quyền (RAW-023)
 
-Phát biểu gốc (Phase 2): *Phân quyền theo vai trò; tối thiểu phân biệt quản trị và người thu phí.*
+Phát biểu ban đầu: *Phân quyền theo vai trò; tối thiểu phân biệt quản trị và người thu phí.*
 
 | Tiêu chí | Phát biểu có thể kiểm thử | Chỉ tiêu | Cách kiểm tra | Mức chắc chắn |
 |---|---|---|---|---|
@@ -223,7 +220,7 @@ Phát biểu gốc (Phase 2): *Phân quyền theo vai trò; tối thiểu phân 
 
 ### NFR-003 — Bảo vệ dữ liệu cá nhân (RAW-024)
 
-Phát biểu gốc (Phase 2): *Che bớt số giấy tờ khi hiển thị thường ngày; chỉ người có quyền xem đầy đủ và xuất.*
+Phát biểu ban đầu: *Che bớt số giấy tờ khi hiển thị thường ngày; chỉ người có quyền xem đầy đủ và xuất.*
 
 | Tiêu chí | Phát biểu có thể kiểm thử | Chỉ tiêu | Cách kiểm tra | Mức chắc chắn |
 |---|---|---|---|---|
@@ -233,7 +230,7 @@ Phát biểu gốc (Phase 2): *Che bớt số giấy tờ khi hiển thị thư�
 
 ### NFR-004 — Audit log (RAW-025)
 
-Phát biểu gốc (Phase 2): *Ghi người, thời điểm, thao tác, giá trị trước/sau; log không sửa được qua giao diện.*
+Phát biểu ban đầu: *Ghi người, thời điểm, thao tác, giá trị trước/sau; log không sửa được qua giao diện.*
 
 | Tiêu chí | Phát biểu có thể kiểm thử | Chỉ tiêu | Cách kiểm tra | Mức chắc chắn |
 |---|---|---|---|---|
@@ -243,7 +240,7 @@ Phát biểu gốc (Phase 2): *Ghi người, thời điểm, thao tác, giá tr�
 
 ### NFR-005 — Sao lưu, khôi phục (RAW-026)
 
-Phát biểu gốc (Phase 2): *Sao lưu tự động hoặc bằng một thao tác, có thể khôi phục.*
+Phát biểu ban đầu: *Sao lưu tự động hoặc bằng một thao tác, có thể khôi phục.*
 
 | Tiêu chí | Phát biểu có thể kiểm thử | Chỉ tiêu | Cách kiểm tra | Mức chắc chắn |
 |---|---|---|---|---|
@@ -255,7 +252,7 @@ Phát biểu gốc (Phase 2): *Sao lưu tự động hoặc bằng một thao t�
 
 ### NFR-006 — Hiệu năng (RAW-027)
 
-Phát biểu gốc (Phase 2): *Tìm kiếm và hiển thị danh sách trong tối đa 3 giây ở quy mô vài trăm hộ.*
+Phát biểu ban đầu: *Tìm kiếm và hiển thị danh sách trong tối đa 3 giây ở quy mô vài trăm hộ.*
 
 | Tiêu chí | Phát biểu có thể kiểm thử | Chỉ tiêu | Cách kiểm tra | Mức chắc chắn |
 |---|---|---|---|---|
@@ -264,7 +261,7 @@ Phát biểu gốc (Phase 2): *Tìm kiếm và hiển thị danh sách trong t�
 
 ### NFR-007 — Khả năng sử dụng (RAW-028)
 
-Phát biểu gốc (Phase 2): *Giao diện tiếng Việt, tiền VND dễ đọc, thông báo lỗi rõ, không quá 5 thao tác chính cho một lần nộp, người không chuyên IT dùng được.*
+Phát biểu ban đầu: *Giao diện tiếng Việt, tiền VND dễ đọc, thông báo lỗi rõ, không quá 5 thao tác chính cho một lần nộp, người không chuyên IT dùng được.*
 
 | Tiêu chí | Phát biểu có thể kiểm thử | Chỉ tiêu | Cách kiểm tra | Mức chắc chắn |
 |---|---|---|---|---|
@@ -329,7 +326,7 @@ Bốn RAW này không có pain point. Đây là **khoảng trống nhóm đã bi
 |---|---|
 | RAW-002 | Chức năng do đề bài yêu cầu (quản lý thông tin cá nhân, đổi mật khẩu); hiện không có tài khoản nên không có pain point tương ứng. |
 | RAW-010 | Chức năng quản lý khoản thu do đề bài yêu cầu; chưa có bằng chứng pain point riêng, chỉ liên quan gián tiếp qua PP-03. |
-| RAW-026 | Mối lo của Ban về mất dữ liệu (giả lập), không phải pain point của quy trình hiện tại. |
+| RAW-026 | Mối lo của Ban về mất dữ liệu, không phải pain point của quy trình hiện tại. |
 | RAW-028 | Ràng buộc từ hồ sơ người dùng (Ban kiêm nhiệm, không chuyên IT), không phải pain point của quy trình hiện tại. |
 
 Các RAW này vẫn hợp lệ vì có nguồn khác (đề bài hoặc mối lo của stakeholder). Khi viết User Story, nên dựa vào đề bài thay vì pain point.
@@ -345,7 +342,7 @@ Các RAW này vẫn hợp lệ vì có nguồn khác (đề bài hoặc mối lo
 | NFR | 7 (21 tiêu chí kiểm thử) |
 | Khoảng trống truy vết | 4 RAW không có pain point (đã giải thích); 0 pain point hoặc capability không có RAW |
 
-## 9. Câu hỏi mở bổ sung (Phase 3)
+## 9. Câu hỏi mở bổ sung
 
 | ID | Câu hỏi | Ảnh hưởng |
 |---|---|---|
@@ -353,4 +350,4 @@ Các RAW này vẫn hợp lệ vì có nguồn khác (đề bài hoặc mối lo
 | P3-Q2 | Nhóm có chấp nhận các chỉ tiêu *proposed* ở mục 6 (3 giây, 5 thao tác, N = 5, RPO 24 giờ, tải demo) không? | NFR-001…007 |
 | P3-Q3 | Có cần biên lai và thông báo thu cho từng hộ in từ hệ thống hay chỉ danh sách (OQ-06)? | CAP-09, CAP-14 |
 
-Các câu hỏi OQ-01…OQ-14 ở Phase 2 vẫn còn hiệu lực.
+Các câu hỏi OQ-01…OQ-14 trong báo cáo phỏng vấn vẫn còn hiệu lực.

@@ -8,7 +8,7 @@ Repository: https://github.com/Aliospbc2006/NhapmonCNPM-24
 
 Hiện nay Ban quản trị chung cư BlueMoon quản lý thu phí và thông tin cư dân bằng Excel và sổ giấy. Project này là phần **tài liệu** cho một phần mềm desktop (Java, MySQL) giúp Ban quản trị quản lý hộ gia đình, nhân khẩu, khoản thu và việc ghi nhận thu phí. Nhóm làm hai phần: **Requirement Elicitation** và **Agile/Scrum**. Chưa viết code ứng dụng.
 
-> **Lưu ý về dữ liệu.** Nhóm chưa phỏng vấn, khảo sát hay quan sát thực tế. Stakeholder statement, Client Wish List, RAW requirement và User Story đều là **Simulated stakeholder input** (*yêu cầu giả lập từ bối cảnh bài toán*), dựa trên đề bài BlueMoon.
+> **Phương pháp.** Dự án không có khách hàng thật. Yêu cầu stakeholder được xây dựng theo kịch bản role-play 4 nhóm đối tượng, dựa trên đề bài BlueMoon (chi tiết ở `docs/03_Requirement_Elicitation_Plan.md`). Nhóm chưa phỏng vấn, khảo sát hay quan sát thực tế.
 
 ## Phạm vi
 
@@ -85,9 +85,9 @@ GitHub Project: [BlueMoon v1.0 - Nhóm 24](https://github.com/users/Aliospbc2006
 
 ## Trạng thái hiện tại
 
-- Phase 0–8 đã xong (kế hoạch, tài liệu, GitHub Project); đã xử lý review của thành viên (Phase 9), đang chờ nhóm và giảng viên xem.
+- Kế hoạch, tài liệu phát hiện yêu cầu, backlog và GitHub Project đã xong; review của thành viên đã được xử lý. Đang chờ nhóm và giảng viên xem.
 - Nội dung mô tả đã viết bằng tiếng Việt. Tiêu đề, tên cột và thuật ngữ chuẩn vẫn giữ tiếng Anh. Review của thành viên đã được xác thực và xử lý ở `docs/06_Team_Review_Response.md`.
-- Phase 8: đã tạo GitHub Project, 41 Issue User Story và 150 Issue task từ dữ liệu planning. GitHub Assignee đã gán cho 150/150 task theo người phụ trách trong workbook.
-- Chưa có code ứng dụng; các thay đổi Phase 9 nằm trên nhánh `fix/team-review-feedback`, chờ nhóm xem rồi mới merge vào `main`.
+- Đã tạo GitHub Project, 41 Issue User Story và 150 Issue task từ dữ liệu planning. GitHub Assignee đã gán cho 150/150 task theo người phụ trách trong workbook.
+- Chưa có code ứng dụng.
 - Chưa có task nào Done. Giờ làm và người nhận task mới chỉ là đề xuất.
 - Các việc còn tồn đọng nằm ở `docs/FINAL_DELIVERABLES.md`, mục 4.
