@@ -14,7 +14,7 @@ Hiện nay Ban quản trị chung cư BlueMoon quản lý thu phí và thông ti
 
 **v1.0 (triển khai):** đăng nhập và đổi mật khẩu; quản lý hộ gia đình; quản lý nhân khẩu; quản lý khoản thu; thu phí (ghi nhận thu); tra cứu / tìm kiếm; thống kê cơ bản.
 
-**v2.0 (chỉ roadmap, Won't-have v1.0):** phí gửi xe; điện, nước, internet. Không có Epic, User Story hay task cho v2.0.
+**v2.0 (chỉ roadmap, Không sử dụng cho v1.0):** phí gửi xe; điện, nước, internet. Không có Epic, User Story hay task cho v2.0.
 
 ## Cách làm: Agile/Scrum
 

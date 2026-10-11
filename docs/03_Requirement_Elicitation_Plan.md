@@ -26,7 +26,7 @@ Các mục tiêu dưới đây lấy từ OBJ-01…OBJ-08 trong tài liệu hư�
 | EL-05 | Phát hiện xung đột, giả định và câu hỏi cần xác thực | Danh sách Open Questions và Conflicts | `04_Interview_Report.md` |
 | EL-06 | Làm đầu vào cho các bước sau: As-Is → To-Be → Epic → Feature → User Story → AC | Mỗi RAW có Source, Evidence Reference, Target Artefact | `deliverables/04_Raw_Requirements.xlsx` |
 
-Phạm vi nội dung là **BlueMoon v1.0**: đăng nhập/đổi mật khẩu, hộ gia đình, nhân khẩu, khoản thu, thu phí, tra cứu/tìm kiếm, thống kê. Phí gửi xe và điện/nước/internet (v2.0) chỉ ghi ở mức roadmap, *Won't-have cho v1.0*.
+Phạm vi nội dung là **BlueMoon v1.0**: đăng nhập/đổi mật khẩu, hộ gia đình, nhân khẩu, khoản thu, thu phí, tra cứu/tìm kiếm, thống kê. Phí gửi xe và điện/nước/internet (v2.0) chỉ ghi ở mức roadmap, *Không sử dụng cho v1.0*.
 
 ## 2. Các nhóm stakeholder theo kịch bản
 
@@ -159,7 +159,7 @@ Quy tắc viết biên bản role-play:
 | Thu phí | TQ (Q02, Q04–Q07), CD (Q04) |
 | Tra cứu / tìm kiếm | TQ (Q08, Q09), CQ (Q05) |
 | Thống kê | BQT (Q07), TQ (Q09), CQ (Q07, Q11) |
-| Roadmap v2.0 (Won't-have v1.0) | BQT (Q11), CD (Q10) |
+| Roadmap v2.0 (Không sử dụng cho v1.0) | BQT (Q11), CD (Q10) |
 
 Giới hạn:
 - Yêu cầu rút ra từ role-play phải được xác thực với khách hàng thật trước khi dùng ngoài môn học.

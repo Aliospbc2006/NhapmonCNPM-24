@@ -143,7 +143,7 @@ Mình lo thông tin như số giấy tờ, số điện thoại của cả nhà 
 **Trả lời:**
 Nếu xem được số tiền và lịch sử đóng trên điện thoại thì tiện lắm, khỏi lên văn phòng.
 
-**Ghi chú của Analyst:** **Conflict C-04:** đề bài mô tả ứng dụng desktop cho Ban quản trị (AS-02). Ghi nhận là mong muốn của cư dân, **ngoài phạm vi v1.0** (Won't-have), có thể đưa vào roadmap sau.
+**Ghi chú của Analyst:** **Conflict C-04:** đề bài mô tả ứng dụng desktop cho Ban quản trị (AS-02). Ghi nhận là mong muốn của cư dân, **ngoài phạm vi v1.0** (Không sử dụng), có thể đưa vào roadmap sau.
 
 **Yêu cầu phát hiện được:**
 - Cư dân tự xem phí, lịch sử qua điện thoại → WISH-24 (Out of v1.0; không tạo RAW)
@@ -171,7 +171,7 @@ Có tin nhắn nhắc trước hạn thì đỡ quên.
 **Trả lời:**
 Gửi xe thì mình trả riêng, điện nước internet cũng trả riêng. Nếu gộp một chỗ thì tiện, nhưng chắc để sau cũng được, giờ cứ lo phí chung cư cho ổn đã.
 
-**Ghi chú của Analyst:** Củng cố roadmap v2.0, **Won't-have v1.0**. Mô tả hiện trạng ở đây là tình huống minh họa.
+**Ghi chú của Analyst:** Củng cố roadmap v2.0, **Không sử dụng cho v1.0**. Mô tả hiện trạng ở đây là tình huống minh họa.
 
 **Yêu cầu phát hiện được:**
 - Gộp phí xe, điện, nước, internet → RAW-029, RAW-030 (Roadmap v2.0)

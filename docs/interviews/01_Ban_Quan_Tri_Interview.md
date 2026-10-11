@@ -134,7 +134,7 @@ Có ba loại chính. Phí dịch vụ và phí quản lý là bắt buộc, thu
 **Trả lời:**
 Mình cần xem tổng tiền đã thu và còn thiếu theo từng khoản, theo tháng hoặc theo đợt. Muốn thấy luôn danh sách hộ chưa nộp. Thêm số hộ, số nhân khẩu hiện tại, bao nhiêu người tạm trú, tạm vắng. Cũng không cần quá cầu kỳ, biểu đồ đẹp thì để sau. Nhưng mà họp cư dân thì mình hay cần số liệu theo từng hộ nữa.
 
-**Ghi chú của Analyst:** Có chút không nhất quán ("không cầu kỳ" nhưng cần nhiều chiều). Giữ ở mức thống kê cơ bản và đưa ra xác thực với Ban. Biểu đồ: *Won't-have* cho v1.0 (chưa xác nhận).
+**Ghi chú của Analyst:** Có chút không nhất quán ("không cầu kỳ" nhưng cần nhiều chiều). Giữ ở mức thống kê cơ bản và đưa ra xác thực với Ban. Biểu đồ: *Không sử dụng* cho v1.0 (chưa xác nhận).
 
 **Yêu cầu phát hiện được:**
 - Thống kê tiền đã thu, còn phải thu theo khoản và kỳ → RAW-019
@@ -197,7 +197,7 @@ Máy ở văn phòng Ban, dùng Windows. Mất dữ liệu là nguy lắm, nên 
 **Trả lời:**
 Phí gửi xe với tiền điện nước internet thì sau này cũng muốn đưa vào vì bên mình thu hộ hằng tháng. Nhưng đợt đầu cứ lo phí chung cư và hộ khẩu cho xong đã. Đừng làm gộp nặng nề.
 
-**Ghi chú của Analyst:** Đúng với đề bài (v2.0). Ghi nhận ở mức roadmap, **Won't-have cho v1.0**.
+**Ghi chú của Analyst:** Đúng với đề bài (v2.0). Ghi nhận ở mức roadmap, **Không sử dụng cho v1.0**.
 
 **Yêu cầu phát hiện được:**
 - Phí gửi xe → RAW-029 (Roadmap v2.0)
@@ -217,7 +217,7 @@ Bắt buộc có: đăng nhập, quản lý hộ và nhân khẩu, tạo khoản
 **Yêu cầu phát hiện được:**
 - Ưu tiên sơ bộ (Must): đăng nhập, quản lý hộ và nhân khẩu, tạo khoản thu, ghi nhận thu, tìm kiếm, thống kê tổng thu, sao lưu
 - Ưu tiên sơ bộ (Should): in biên lai, xuất danh sách cho cơ quan chức năng
-- Won't-have v1.0: biểu đồ, phí gửi xe, điện/nước/internet (roadmap v2.0)
+- Không sử dụng cho v1.0: biểu đồ, phí gửi xe, điện/nước/internet (roadmap v2.0)
 - (Ưu tiên chi tiết từng RAW nằm ở cột Notes của `Raw_Requirements`.)
 
 ---

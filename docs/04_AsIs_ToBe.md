@@ -19,7 +19,7 @@ Nhóm đối chiếu sheet `Raw_Requirements` với báo cáo phỏng vấn, 30 
 
 ## 1. Phạm vi và quy ước
 
-- Phạm vi: **BlueMoon v1.0** (đăng nhập/đổi mật khẩu, hộ gia đình, nhân khẩu, khoản thu, thu phí, tra cứu/tìm kiếm, thống kê cơ bản). v2.0 (phí gửi xe, điện, nước, internet) chỉ ở mục 5, *Won't-have cho v1.0*.
+- Phạm vi: **BlueMoon v1.0** (đăng nhập/đổi mật khẩu, hộ gia đình, nhân khẩu, khoản thu, thu phí, tra cứu/tìm kiếm, thống kê cơ bản). v2.0 (phí gửi xe, điện, nước, internet) chỉ ở mục 5, *Không sử dụng cho v1.0*.
 - ID dùng trong tài liệu: `AI-xx` (bước As-Is), `PP-xx` (pain point), `TB-xx` (bước To-Be), `CAP-xx` (capability v1.0), `ROAD-xx` (roadmap v2.0), `NFR-xxx` (và tiêu chí con `NFR-xxx.n`), `RAW-xxx` (không đổi).
 
 ## 2. AS-IS: quy trình hiện tại (giả định)
@@ -175,7 +175,7 @@ Capability phi chức năng (xuyên suốt, liên kết NFR ở mục 6): NFR-00
 
 ## 5. Roadmap v2.0 và ý tưởng ngoài phạm vi
 
-### 5.1 Roadmap v2.0 (Won't-have cho v1.0)
+### 5.1 Roadmap v2.0 (Không sử dụng cho v1.0)
 
 | ID | Hạng mục | Mô tả theo đề bài | RAW | Wish |
 |---|---|---|---|---|
@@ -338,7 +338,7 @@ Các RAW này vẫn hợp lệ vì có nguồn khác (đề bài hoặc mối lo
 | Bước As-Is | 13 (quy trình A: 10, quy trình B: 3) |
 | Pain point | 12 (11 process pain + 1 concern) |
 | Capability To-Be v1.0 | 19 chức năng + 7 NFR |
-| Roadmap v2.0 | 2 (Won't-have v1.0) |
+| Roadmap v2.0 | 2 (Không sử dụng cho v1.0) |
 | NFR | 7 (21 tiêu chí kiểm thử) |
 | Khoảng trống truy vết | 4 RAW không có pain point (đã giải thích); 0 pain point hoặc capability không có RAW |
 

@@ -54,7 +54,7 @@ Nhóm rà bằng script kiểm tra riêng và đọc lại tài liệu. Script c
 - Mọi story đều có AC, vai trò, mục tiêu và giá trị (dạng "Là một …, tôi muốn …, để …").
 - Không story nào phụ thuộc story ở sprint sau hoặc story chưa xếp. Không task nào phụ thuộc task đứng sau.
 - Mọi task có Assignee, Reviewer khác Assignee, ước lượng giờ và Status = Todo.
-- v2.0 (phí gửi xe, điện, nước, internet) chỉ xuất hiện trong ngữ cảnh Roadmap / Won't-have. Không có Epic, Feature, US hay task nào cho v2.0.
+- v2.0 (phí gửi xe, điện, nước, internet) chỉ xuất hiện trong ngữ cảnh Roadmap / Không sử dụng. Không có Epic, Feature, US hay task nào cho v2.0.
 - File 05 không còn dữ liệu mẫu của giảng viên. Định dạng tiêu đề và bảng màu theo mẫu. File mẫu gốc không đổi (đã kiểm tra mã băm).
 - Tất cả story Must đã xếp vào Sprint.
 

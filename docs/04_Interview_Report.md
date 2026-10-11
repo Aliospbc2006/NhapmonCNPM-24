@@ -88,8 +88,8 @@ Danh sách mong muốn thô, **30 wish** (26 thuộc v1.0, 2 roadmap v2.0, 2 ngo
 | WISH-06 | BQT | Ban quản trị muốn biết ai đã nhập, sửa hoặc hủy số liệu tiền, vào lúc nào. | SIM-INT-BQT-Q09 | RAW-015, RAW-025 | v1.0 | — |
 | WISH-07 | BQT | Ban quản trị muốn dữ liệu được sao lưu tự động hoặc bằng một thao tác, không để mất. | SIM-INT-BQT-Q10 | RAW-026 | v1.0 | Coi là bắt buộc. |
 | WISH-08 | BQT | Ban quản trị muốn người thu phí chỉ làm phần thu; việc sửa hộ, đổi đơn giá do trưởng ban. | SIM-INT-BQT-Q08 | RAW-023 | v1.0 | Mức phân quyền chi tiết chưa chốt (OQ-04). |
-| WISH-09 | BQT | Về sau Ban quản trị muốn quản lý phí gửi xe trong cùng phần mềm. | SIM-INT-BQT-Q11 | RAW-029 | Roadmap v2.0 | Won't-have v1.0. Đợt đầu chưa làm. |
-| WISH-10 | BQT | Về sau Ban quản trị muốn quản lý các khoản thu hộ điện, nước, internet trong cùng phần mềm. | SIM-INT-BQT-Q11 | RAW-030 | Roadmap v2.0 | Won't-have v1.0. |
+| WISH-09 | BQT | Về sau Ban quản trị muốn quản lý phí gửi xe trong cùng phần mềm. | SIM-INT-BQT-Q11 | RAW-029 | Roadmap v2.0 | Không sử dụng cho v1.0. Đợt đầu chưa làm. |
+| WISH-10 | BQT | Về sau Ban quản trị muốn quản lý các khoản thu hộ điện, nước, internet trong cùng phần mềm. | SIM-INT-BQT-Q11 | RAW-030 | Roadmap v2.0 | Không sử dụng cho v1.0. |
 | WISH-11 | TQ | Thủ quỹ muốn hệ thống tự tính số tiền phí dịch vụ, phí quản lý của từng hộ theo diện tích, khỏi bấm máy tính tay. | SIM-INT-TQ-Q03, SIM-INT-TQ-Q10 | RAW-011 | v1.0 | Miễn/giảm chưa thuộc v1.0 (C-02, OQ-02). |
 | WISH-12 | TQ | Thủ quỹ muốn ghi nhận nộp tiền chỉ một lần: chọn hộ, khoản, nhập số tiền và ngày, không ghi sổ rồi gõ lại Excel. | SIM-INT-TQ-Q02 | RAW-013 | v1.0 | — |
 | WISH-13 | TQ | Thủ quỹ muốn ghi nhận được trường hợp hộ nộp thiếu hoặc nộp gộp nhiều tháng và biết còn thiếu bao nhiêu. | SIM-INT-TQ-Q05 | RAW-013, RAW-018 | v1.0 | Chính sách phạt chậm nộp/nộp trước chưa rõ (OQ-05). |
@@ -103,8 +103,8 @@ Danh sách mong muốn thô, **30 wish** (26 thuộc v1.0, 2 roadmap v2.0, 2 ngo
 | WISH-21 | CD | Chủ hộ muốn biết tổng thu và số hộ góp của từng đợt đóng góp, nhưng đây là tự nguyện, không bị ghi tên nhắc khi chưa đóng. | SIM-INT-CD-Q05 | RAW-012, RAW-019 | v1.0 | Liên quan C-07, AS-19. |
 | WISH-22 | CD | Chủ hộ muốn Ban quản trị ghi nhận đúng khi gia đình thêm người, có người ở tạm hoặc đi vắng, kèm thời gian rõ ràng. | SIM-INT-CD-Q06 | RAW-006, RAW-007, RAW-008 | v1.0 | — |
 | WISH-23 | CD | Chủ hộ muốn thông tin cá nhân của gia đình chỉ người có quyền trong Ban quản trị xem được. | SIM-INT-CD-Q07 | RAW-024, RAW-023 | v1.0 | Liên quan C-03. |
-| WISH-24 | CD | Chủ hộ muốn tự xem số tiền phải đóng và lịch sử đóng phí trên điện thoại. | SIM-INT-CD-Q08 | — | Ngoài v1.0 (Won't-have) | Mâu thuẫn AS-02 (C-04). Không tạo RAW; ghi vào roadmap. |
-| WISH-25 | CD | Chủ hộ muốn được nhắn nhắc trước hạn nộp phí. | SIM-INT-CD-Q09 | — | Ngoài v1.0 (Won't-have) | Thông báo/nhắc ngoài hệ thống (AS-07, C-05). Ban dùng RAW-020 để nhắc thủ công. |
+| WISH-24 | CD | Chủ hộ muốn tự xem số tiền phải đóng và lịch sử đóng phí trên điện thoại. | SIM-INT-CD-Q08 | — | Ngoài v1.0 (Không sử dụng) | Mâu thuẫn AS-02 (C-04). Không tạo RAW; ghi vào roadmap. |
+| WISH-25 | CD | Chủ hộ muốn được nhắn nhắc trước hạn nộp phí. | SIM-INT-CD-Q09 | — | Ngoài v1.0 (Không sử dụng) | Thông báo/nhắc ngoài hệ thống (AS-07, C-05). Ban dùng RAW-020 để nhắc thủ công. |
 | WISH-26 | CQ | Đại diện cơ quan chức năng muốn Ban quản trị cung cấp nhanh danh sách hộ, nhân khẩu khi có yêu cầu và tra nhanh được một người. | SIM-INT-CQ-Q02, SIM-INT-CQ-Q05 | RAW-009, RAW-017 | v1.0 | Đóng dấu xác nhận nằm ngoài hệ thống (AS-16). |
 | WISH-27 | CQ | Đại diện cơ quan chức năng muốn thông tin nhân khẩu có tình trạng cư trú (thường xuyên, tạm trú, tạm vắng) kèm thời hạn. | SIM-INT-CQ-Q04 | RAW-006, RAW-008 | v1.0 | Trường dữ liệu chính xác cần xác thực (OQ-07). |
 | WISH-28 | CQ | Đại diện cơ quan chức năng muốn có lịch sử biến động nhân khẩu (chuyển đến, đi, sinh, mất) kèm ngày và không bị xóa. | SIM-INT-CQ-Q06 | RAW-007 | v1.0 | Danh sách loại biến động chưa chốt (OQ-13). |
@@ -113,7 +113,7 @@ Danh sách mong muốn thô, **30 wish** (26 thuộc v1.0, 2 roadmap v2.0, 2 ngo
 
 ## 7. Functional Requirements
 
-21 FR cho v1.0, thêm 2 FR roadmap (Won't-have cho v1.0). Nội dung đầy đủ nằm ở sheet `Raw_Requirements`.
+21 FR cho v1.0, thêm 2 FR roadmap (Không sử dụng cho v1.0). Nội dung đầy đủ nằm ở sheet `Raw_Requirements`.
 
 | RAW ID | Stakeholder | Raw Requirement | Evidence Reference | Target Artefact (dự kiến) |
 |---|---|---|---|---|
@@ -138,8 +138,8 @@ Danh sách mong muốn thô, **30 wish** (26 thuộc v1.0, 2 roadmap v2.0, 2 ngo
 | RAW-019 | BQT; CD; CQ | Thống kê tổng số tiền đã thu và còn phải thu theo khoản thu, theo tháng hoặc đợt; thống kê tổng thu và danh sách hộ đã đóng theo từng đợt đóng góp. | SIM-INT-BQT-Q05; SIM-INT-BQT-Q07; SIM-INT-CD-Q05; SIM-INT-CQ-Q07; PS-01 | Epic (dự kiến): Tra cứu & thống kê |
 | RAW-020 | TQ; BQT | Lập danh sách hộ chưa nộp hoặc còn nợ theo kỳ (đối với khoản bắt buộc) để Ban nhắc nộp. | SIM-INT-TQ-Q09; SIM-INT-BQT-Q07; SIM-INT-BQT-Q03 | Epic (dự kiến): Tra cứu & thống kê |
 | RAW-021 | CQ; BQT | Thống kê số hộ, số nhân khẩu, số người tạm trú, tạm vắng tại một thời điểm, ghi rõ ngày tính. | SIM-INT-CQ-Q11; SIM-INT-BQT-Q07 | Epic (dự kiến): Tra cứu & thống kê |
-| RAW-029 | BQT; CD | [Roadmap v2.0] Quản lý phí gửi xe: thu theo tháng theo thông tin phương tiện đăng ký của hộ gia đình. | SIM-INT-BQT-Q11; SIM-INT-CD-Q10; PS-01 | Product Backlog: Won't-have v1.0 / Roadmap v2.0 |
-| RAW-030 | BQT; CD | [Roadmap v2.0] Quản lý các khoản thu hộ điện, nước, internet theo thông báo của nhà cung cấp dịch vụ. | SIM-INT-BQT-Q11; SIM-INT-CD-Q10; PS-01 | Product Backlog: Won't-have v1.0 / Roadmap v2.0 |
+| RAW-029 | BQT; CD | [Roadmap v2.0] Quản lý phí gửi xe: thu theo tháng theo thông tin phương tiện đăng ký của hộ gia đình. | SIM-INT-BQT-Q11; SIM-INT-CD-Q10; PS-01 | Product Backlog: Không sử dụng cho v1.0 / Roadmap v2.0 |
+| RAW-030 | BQT; CD | [Roadmap v2.0] Quản lý các khoản thu hộ điện, nước, internet theo thông báo của nhà cung cấp dịch vụ. | SIM-INT-BQT-Q11; SIM-INT-CD-Q10; PS-01 | Product Backlog: Không sử dụng cho v1.0 / Roadmap v2.0 |
 
 Bao phủ phạm vi v1.0:
 
@@ -155,7 +155,7 @@ Bao phủ phạm vi v1.0:
 | Tra cứu / tìm kiếm | RAW-016, RAW-017, RAW-018 |
 | Thống kê cơ bản | RAW-019, RAW-020, RAW-021 |
 | NFR (bảo mật, phân quyền, riêng tư, truy vết, sao lưu, hiệu năng, dễ dùng) | RAW-022 … RAW-028 |
-| Roadmap v2.0 — Won't-have v1.0 (phí gửi xe; điện, nước, internet) | RAW-029, RAW-030 |
+| Roadmap v2.0 — Không sử dụng cho v1.0 (phí gửi xe; điện, nước, internet) | RAW-029, RAW-030 |
 
 ## 8. Non-Functional Requirements
 
@@ -214,8 +214,8 @@ Tiếp nối AS-01…AS-10 trong [01_Project_Overview.md](01_Project_Overview.md
 | C-01 | BQT-Q08 | Ban nghĩ dùng chung một tài khoản cho tiện, nhưng cũng muốn biết ai sửa (BQT-Q09). | Tài khoản dùng chung mâu thuẫn với audit log và phân quyền. | Giả định mỗi người một tài khoản riêng (AS-11). Cần Ban xác nhận (OQ-04). |
 | C-02 | BQT-Q06 / TQ-Q10 | Ban nghĩ mọi căn cùng đơn giá; thủ quỹ nói đôi khi có hộ được miễn, giảm. | Chưa rõ có quy tắc miễn/giảm hay không. | Miễn/giảm không thuộc v1.0 nếu chưa xác nhận (AS-14, OQ-02). |
 | C-03 | CQ-Q04, Q09 / CD-Q07 | Cơ quan cần số giấy tờ đầy đủ; cư dân lo bị lộ. | Đầy đủ dữ liệu và bảo mật cùng được yêu cầu. | Lưu đủ, che bớt khi hiển thị, giới hạn quyền xem và xuất, ghi log xuất (RAW-024, RAW-025). OQ-08. |
-| C-04 | CD-Q08 / PS-01 | Cư dân muốn tự xem phí trên điện thoại; đề bài mô tả ứng dụng desktop cho Ban quản trị. | Ngoài phạm vi v1.0. | Won't-have v1.0, ghi vào roadmap; không tạo RAW (WISH-24, AS-02). |
-| C-05 | CD-Q09 / AS-07 | Cư dân muốn nhận nhắc nộp phí tự động; thông báo hiện nằm ngoài hệ thống. | Ngoài phạm vi v1.0. | Won't-have v1.0; Ban dùng danh sách hộ chưa nộp (RAW-020) để nhắc thủ công (WISH-25). |
+| C-04 | CD-Q08 / PS-01 | Cư dân muốn tự xem phí trên điện thoại; đề bài mô tả ứng dụng desktop cho Ban quản trị. | Ngoài phạm vi v1.0. | Không sử dụng cho v1.0, ghi vào roadmap; không tạo RAW (WISH-24, AS-02). |
+| C-05 | CD-Q09 / AS-07 | Cư dân muốn nhận nhắc nộp phí tự động; thông báo hiện nằm ngoài hệ thống. | Ngoài phạm vi v1.0. | Không sử dụng cho v1.0; Ban dùng danh sách hộ chưa nộp (RAW-020) để nhắc thủ công (WISH-25). |
 | C-06 | BQT-Q07 | Ban nói thống kê không cần cầu kỳ nhưng lại cần nhiều chiều (khoản, kỳ, hộ, nhân khẩu). | Phạm vi thống kê cơ bản chưa rõ ranh giới. | Thống kê cơ bản theo khoản, kỳ, hộ; không biểu đồ ở v1.0; cần PO xác thực. |
 | C-07 | CQ-Q07 / CD-Q05 | Cơ quan muốn danh sách hộ đã đóng quỹ; cư dân không muốn bị ghi tên nhắc khi chưa đóng. | Minh bạch và tính tự nguyện. | Chỉ báo cáo tổng thu và hộ đã đóng; không có khái niệm nợ với khoản tự nguyện (AS-19). |
 | C-08 | BQT-Q04 / PS-02 | Ban mong có người nhập dữ liệu cũ từ Excel; ví dụ Charter (Bài 4.1, Chương 4, chỉ tham khảo) loại trừ nhập liệu khỏi phạm vi dự án; AS-08 là giả định của nhóm. | Phạm vi nhóm. | Ngoài phạm vi (AS-08); import Excel chưa đưa vào v1.0 (OQ-12). |
